@@ -10,10 +10,14 @@ if (mysqli_num_rows($result) > 0) {
 
     $row=mysqli_fetch_assoc($result);
     $_SESSION["user"] = $row;
+    $_SESSION["collage_id"]=$row;
+    $_SESSION["user_name"]=$row["user_name"];
+    $_SESSION["user_email"]=$row["user_email"];
+    $_SESSION["user_course"]=$row["user_course"];
+    $_SESSION["user_role_id"]=$row["user_role_id"];
 
-    header('LOCATION:http://classlink.com/user/view/dashboard.php');
-}else{
-    header('LOCATION:http://classlink.com/user/view/auth/sign_in.php');
+    header('LOCATION:http://classlink.com/user/view/deshboard.php');
 }
+
 
 ?>
