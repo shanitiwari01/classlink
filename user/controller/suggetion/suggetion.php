@@ -211,7 +211,21 @@
                                         <h5>234</h5>
                                     </div> 
                                     <div class="m-auto">
-                                    <a href="" class="btn btn-primary">CONNECT</a>
+                                    <button type="submit" class="btn btn-primary at_friend" data-id="<?php echo $data['user_id'];?>" >CONNECT</button>
+                                    <script>
+                                        $('button').click(function(){
+                                            $(this).data('id');
+                                            $id = $(this).data('id');
+                                            $.ajax({
+                                                type:"POST",
+                                                url:"at_friend.php",
+                                                dataType:'json',
+                                                data:{
+                                                    id:$id;
+                                                }
+                                            })
+                                        })
+                                    </script> 
                                     </div>                           
                                 </div>
                             </div>
@@ -234,5 +248,5 @@
 <!-- Jquery Core Js --> 
 <script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
-
+<script src="http://classlink.com/assets/bundles/jquery-3.3.1.min.js"></script>
 <script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
