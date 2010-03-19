@@ -1,5 +1,5 @@
 <?php
-include('../libraries/check_in.php');
+include 'file:///C:/xampp/htdocs/classlink/admin/libraries/check_in.php';
 ?>
 <!doctype html>
 <html class="no-js " lang="en">
@@ -25,7 +25,7 @@ include('../libraries/check_in.php');
 <aside id="leftsidebar" class="sidebar">
     <div class="navbar-brand">
         <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
-        <a href="index-2.html"><img src="http://classlink.com/assets/images/logo.svg" width="25" alt="Aero"><span class="m-l-10">Aero</span></a>
+        <a href="index-2.html"><img src="http://classlink.com/assets/images/logo.png" width="85" alt="ClassLINK"><span class="m-l-10">ClassLINK</span></a>
     </div>
     <div class="menu">
         <ul class="list">
