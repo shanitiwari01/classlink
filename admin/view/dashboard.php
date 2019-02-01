@@ -190,7 +190,7 @@
                                         </tr>
                                     </thead>
                                     <?php
-                                    include('C:\xampp\htdocs\classlink\admin\database\dbcon.php');
+                                    include('C:/xampp/htdocs/classlink/database/dbcon.php');
                                       $qry="SELECT * FROM `contact_us` ";
                                       $run=mysqli_query($con,$qry);
                                       while ($result = mysqli_fetch_array($run)) {
