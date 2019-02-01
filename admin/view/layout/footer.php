@@ -1,21 +1,3 @@
-<!doctype html>
-<html class="no-js " lang="en">
-
-<!-- Mirrored from thememakker.com/templates/aero/html/normal-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Jan 2019 16:16:33 GMT -->
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
-
-<title>:: Aero Bootstrap4 Admin :: Normal Tables</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<!-- Favicon-->
-<link rel="stylesheet" href="http://classlink.com/admin/assets/bootstrap/bootstrap.min.css">
-<!-- Custom Css -->
-<link rel="stylesheet" href="http://classlink.com/admin/assets/css/style.min.css">
-</head>
-<body class="theme-blush">
 
 
 <!-- Main Search -->
