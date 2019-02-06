@@ -12,7 +12,7 @@
 <!-- Favicon-->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- Custom Css -->
-<link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="../../assets/css/style.min.css">
 </head>
 
