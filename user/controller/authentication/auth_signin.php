@@ -11,7 +11,7 @@ if (mysqli_num_rows($result) > 0) {
     $row=mysqli_fetch_assoc($result);
     $_SESSION["user"] = $row;
 
-    header('LOCATION:http://classlink.com/admin/view/dashboard.php');
+    header('LOCATION:http://classlink.com/user/view/dashboard.php');
 }else{
     header('LOCATION:http://classlink.com/user/view/auth/sign_in.php');
 }
