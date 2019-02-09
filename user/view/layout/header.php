@@ -23,7 +23,7 @@
 <aside id="leftsidebar" class="sidebar">
     <div class="navbar-brand">
         <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
-        <a href="index-2.html"><img src="http://classlink.com/user/assets/images/logo.png" width="120" alt="Class link"></a>
+        <a href="index-2.html"><img src="http://classlink.com/user/assets/images/logo.png" width="100" alt="Class link"></a>
     </div>
     <div class="menu">
         <ul class="list">
