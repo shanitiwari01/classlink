@@ -6,8 +6,4 @@ $run=mysqli_query($con,$qry);
 if ($run) {
     header('LOCATION:http://classlink.com/user/view/deshboard.php');
 }
-else
-{
-    echo 'error';
-}
 ?>
