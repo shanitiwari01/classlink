@@ -1,3 +1,7 @@
+<?php
+include('file:///C:/xampp/htdocs/classlink/admin/libraries/check_in.php');
+?>
+
 
 <!doctype html>
 <html class="no-js " lang="en">
