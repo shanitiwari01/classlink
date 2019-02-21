@@ -1,4 +1,4 @@
-
+ 
 <?php include 'layout/header.php'; ?>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
@@ -193,27 +193,34 @@
 
                                <!-- Modal body -->
                                <div class="modal-body">
-                               <form action="http://classlink.com/user/view/auth/addcourse.php" method="post">
+                               <form action="http://classlink.com/user/controller/course/addcourse.php" method="post" id="insert_course">
 
                            <div class="form-group">
-                             <label for="cname">Course Name</label>
-                             <input type="text" class="form-control" id="cname">
+                             <label for="cn">Course Name</label>
+                             <input type="text" class="form-control" id="cname" name="cname">
                            </div>
 
                            <div class="form-group">
                              <label for="cd">Course Discription</label>
-                             <textarea class="form-control" rows="5" id="cd"></textarea>
+                             <textarea class="form-control" rows="5" id="cdiscription" name="cdiscription"></textarea>
                            </div>
-
-                           <button type="submit" class="btn btn-danger" >submit</button>
+                            
+                        <div class="modal-footer">
+                           <button type="submit" class="btn btn-danger save" onclick="insert();" >submit</button>
+                           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+                        </div>    
                          </form>
+                         <!-------script ------->
+                         <script>
+                         function insert(){
+                           document.getElementById('insert_course').submit();
+                        }
+                         </script>
+                         <!-----script--------->
                                </div>
                              </div>
                            </div>
                          </div>
-
-
-
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -229,22 +236,22 @@
                                         </tr>
                                     </thead>
                                     <?php
-                                    $num=0;
+                                
                                     include('C:/xampp/htdocs/classlink/database/dbcon.php');
                                       $qry="SELECT * FROM `user_course` ";
                                       $run=mysqli_query($con,$qry);
                                       while ($result = mysqli_fetch_array($run)) {
-                                          $num++;
+                                          
                                           ?>
 
                                     
                                     <tbody>
                                         <tr>
-                                            <td><?php echo $num; ?></td>
+                                            <td><?php echo $result['course_id']; ?></td>
                                             <td><?php echo $result['course_name']; ?></td>
                                             <td><?php echo $result['course_discription']; ?></td>
-                                            <td><button class='btn btn-primary btn-outline-dark'>Delete</button></td>
-                                            <td><button class='btn btn-primary btn-outline-dark'>Update</button></td> 
+                                            <td><a href='http://classlink.com/user/controller/course/delete.php?course_id=<?php echo $result['course_id'];?>' class='btn btn-primary btn-outline-dark'>Delete</a></td>
+                                            <td><a href='http://classlink.com/user/controller/Course_update/courseupdate.php?course_id=<?php echo $result['course_id'];?>' class='btn btn-primary btn-outline-dark save' data-id="<?php $user_id ?>">Update</a></td>
                                         </tr>
                                         <?php
                                       }
@@ -271,7 +278,6 @@
 <script src="http://classlink.com/user/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
 </body>
 
-<!-- Mirrored from thememakker.com/templates/aero/html/normal-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Jan 2019 16:16:33 GMT -->
+
 </html>
 
-?>
