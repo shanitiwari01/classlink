@@ -186,6 +186,7 @@
                                             <th>SUBJECT</th>
                                             <th>MESSAGE</th>
                                             <th>MAIL</th>
+                                        
 
                                         </tr>
                                     </thead>
@@ -204,6 +205,7 @@
                                             <td><?php echo $result['subject']; ?></td>
                                             <td><?php echo $result['message']; ?></td>
                                             <td><button class='btn btn-primary btn-outline-dark' name="send"><a href="http://classlink.com/admin/mail/mail.php?id=<?php echo $result['contact_id']; ?>" class="text-white">Send Mail</a></button></td>
+                                            
                                         </tr>
                                         <?php
                                       }
