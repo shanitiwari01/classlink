@@ -154,13 +154,13 @@
                                 <ul class="list-unstyled team-info">
                                     <li class="m-r-15"><small>Team</small></li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar2.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar2.jpg" alt="Avatar">
                                     </li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar3.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar3.jpg" alt="Avatar">
                                     </li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar4.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar4.jpg" alt="Avatar">
                                     </li>                            
                                 </ul>
                             </div>
@@ -176,19 +176,19 @@
                                 <ul class="list-unstyled team-info">
                                     <li class="m-r-15"><small>Team</small></li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar10.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar10.jpg" alt="Avatar">
                                     </li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar9.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar9.jpg" alt="Avatar">
                                     </li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar8.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar8.jpg" alt="Avatar">
                                     </li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar7.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar7.jpg" alt="Avatar">
                                     </li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar6.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar6.jpg" alt="Avatar">
                                     </li>
                                 user
                             </div>
@@ -204,13 +204,13 @@
                                 <ul class="list-unstyled team-info">
                                     <li class="m-r-15"><small>Team</small></li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar5.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar5.jpg" alt="Avatar">
                                     </li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar2.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar2.jpg" alt="Avatar">
                                     </li>
                                     <li>
-                                        <img src="http://classlink.com/user/assets/images/xs/avatar7.jpg" alt="Avatar">
+                                        <img src="http://classlink.com/assets/images/xs/avatar7.jpg" alt="Avatar">
                                     </li>                            
                                 </ul>
                             </div>
