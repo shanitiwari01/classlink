@@ -9,7 +9,7 @@ if (isset($_SESSION['user'])) {
 <!doctype html>
 <html class="no-js " lang="en">
 
-<!-- Mirrored from thememakker.com/templates/aero/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Jan 2019 16:16:01 GMT -->
+
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -20,8 +20,8 @@ if (isset($_SESSION['user'])) {
 <!-- Favicon-->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- Custom Css -->
-<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/style.min.css">    
+<link rel="stylesheet" href="http://classlink.com/assets/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="http://classlink.com/assets/css/style.min.css">    
 </head>
 
 <body class="theme-blush">
@@ -60,7 +60,7 @@ if (isset($_SESSION['user'])) {
             </div>
             <div class="col-lg-8 col-sm-12">
                 <div class="card">
-                    <img src="assets/images/signin.svg" alt="Sign In"/>
+                    <img src="http://classlink.com/assets/images/signin.svg" alt="Sign In"/>
                 </div>
             </div>
         </div>
@@ -68,9 +68,9 @@ if (isset($_SESSION['user'])) {
 </div>
 
 <!-- Jquery Core Js -->
-<script src="assets/bundles/libscripts.bundle.js"></script>
-<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script>
+<script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
 </body>
 
-<!-- Mirrored from thememakker.com/templates/aero/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Jan 2019 16:16:01 GMT -->
+
 </html>

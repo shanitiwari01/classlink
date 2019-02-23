@@ -4,7 +4,7 @@ include('../libraries/check_in.php');
 <!doctype html>
 <html class="no-js " lang="en">
 
-<!-- Mirrored from thememakker.com/templates/aero/html/normal-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Jan 2019 16:16:33 GMT -->
+
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -14,9 +14,9 @@ include('../libraries/check_in.php');
 <title>:: Aero Bootstrap4 Admin :: Normal Tables</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- Favicon-->
-<link rel="stylesheet" href="http://classlink.com/admin/assets/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="http://classlink.com/assets/bootstrap/bootstrap.min.css">
 <!-- Custom Css -->
-<link rel="stylesheet" href="http://classlink.com/admin/assets/css/style.min.css">
+<link rel="stylesheet" href="http://classlink.com/assets/css/style.min.css">
 </head>
 <body class="theme-blush">
 
@@ -25,13 +25,13 @@ include('../libraries/check_in.php');
 <aside id="leftsidebar" class="sidebar">
     <div class="navbar-brand">
         <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
-        <a href="index-2.html"><img src="http://classlink.com/admin/assets/images/logo.svg" width="25" alt="Aero"><span class="m-l-10">Aero</span></a>
+        <a href="index-2.html"><img src="http://classlink.com/assets/images/logo.svg" width="25" alt="Aero"><span class="m-l-10">Aero</span></a>
     </div>
     <div class="menu">
         <ul class="list">
             <li>
                 <div class="user-info">
-                    <a class="image" href="profile.html"><img src="http://classlink.com/admin/assets/images/profile_av.jpg" alt="User"></a>
+                    <a class="image" href="profile.html"><img src="http://classlink.com/assets/images/profile_av.jpg" alt="User"></a>
                     <div class="detail">
                         <h4>Michael</h4>
                         <small>Super Admin</small>
