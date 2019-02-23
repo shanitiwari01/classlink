@@ -1,9 +1,9 @@
  
-<?php include 'file:///C:/xampp/htdocs/classlink/user/view/layout/header.php'; ?>
+<?php include 'header.php'; ?>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img class="zmdi-hc-spin" src="http://classlink.com/admin/assets/images/loader.svg" width="48" height="48" alt="Aero"></div>
+        <div class="m-t-30"><img class="zmdi-hc-spin" src="http://classlink.com/assets/images/loader.svg" width="48" height="48" alt="Aero"></div>
         <p>Please wait...</p>
     </div>
 </div>
@@ -11,7 +11,7 @@
 <!-- Overlay For Sidebars -->
 <div class="overlay"></div>
 
-<?php include 'file:///C:/xampp/htdocs/classlink/user/view/layout/footer.php'; ?>
+<?php include 'footer.php'; ?>
 
 <!-- Right Sidebar -->
 <aside id="rightsidebar" class="right-sidebar">
@@ -96,7 +96,7 @@
                         <li class="online">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="http://classlink.com/admin/assets/images/xs/avatar4.jpg" alt="">
+                                    <img class="media-object " src="http://classlink.com/assets/images/xs/avatar4.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">Sophia <small class="float-right">11:00AM</small></span>
                                         <span class="message">There are many variations of passages of Lorem Ipsum available</span>
@@ -108,7 +108,7 @@
                         <li class="online">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="http://classlink.com/admin/assets/images/xs/avatar5.jpg" alt="">
+                                    <img class="media-object " src="http://classlink.com/assets/images/xs/avatar5.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">Grayson <small class="float-right">11:30AM</small></span>
                                         <span class="message">All the Lorem Ipsum generators on the</span>
@@ -120,7 +120,7 @@
                         <li class="offline">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="http://classlink.com/admin/assets/images/xs/avatar2.jpg" alt="">
+                                    <img class="media-object " src="http://classlink.com/assets/images/xs/avatar2.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">Isabella <small class="float-right">11:31AM</small></span>
                                         <span class="message">Contrary to popular belief, Lorem Ipsum</span>
@@ -132,7 +132,7 @@
                         <li class="me">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="http://classlink.com/admin/assets/images/xs/avatar1.jpg" alt="">
+                                    <img class="media-object " src="http://classlink.com/assets/images/xs/avatar1.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">John <small class="float-right">05:00PM</small></span>
                                         <span class="message">It is a long established fact that a reader</span>
@@ -144,7 +144,7 @@
                         <li class="online">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="http://classlink.com/admin/assets/images/xs/avatar3.jpg" alt="">
+                                    <img class="media-object " src="http://classlink.com/assets/images/xs/avatar3.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">Alexander <small class="float-right">06:08PM</small></span>
                                         <span class="message">Richard McClintock, a Latin professor</span>
@@ -233,10 +233,10 @@
 
 
 <!-- Jquery Core Js --> 
-<script src="http://classlink.com/user/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
-<script src="http://classlink.com/user/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 
-<script src="http://classlink.com/user/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
 </body>
 
 
