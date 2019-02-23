@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js " lang="en">
 
-<!-- Mirrored from thememakker.com/templates/aero/html/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Jan 2019 16:16:43 GMT -->
+
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -12,8 +12,8 @@
 <!-- Favicon-->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- Custom Css -->
-<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="../../assets/css/style.min.css">
+<link rel="stylesheet" href="http://classlink.com/assets/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="http://classlink.com/assets/css/style.min.css">
 </head>
 
 <body class="theme-blush">
@@ -24,7 +24,7 @@
             <div class="col-lg-4 col-sm-12">
                 <form class="card auth_form" action="http://classlink.com/user/controller/authentication/authenticate.php" method="post">
                     <div class="header">
-                        <img class="logo" src="http://classlink.com/user/assets/images/logo.png" alt="" style="width:219px;" >
+                        <img class="logo" src="http://classlink.com/assets/images/logo.png" alt="" style="width:219px;" >
                         <h5>Sign Up</h5>
                         <span>Register a new membership</span>
                     </div>
@@ -60,7 +60,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
                 <div class="card">
-                    <img src="http://classlink.com/user/assets/images/signup.svg" alt="Sign Up" />
+                    <img src="http://classlink.com/assets/images/signup.svg" alt="Sign Up" />
                 </div>
             </div>
         </div>
@@ -69,8 +69,8 @@
 
 
 <!-- Jquery Core Js -->
-<script src="http://classlink.com/user/assets/bundles/libscripts.bundle.js"></script>
-<script src="http://classlink.com/user/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script>
+<script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 </body>
 
 </html>
