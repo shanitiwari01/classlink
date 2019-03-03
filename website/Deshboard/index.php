@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>eStartup Bootstrap Template</title>
+  <title>ClassLink</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -28,12 +28,7 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Theme Name: eStartup
-    Theme URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+   
 </head>
 
 <body>
@@ -42,7 +37,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto"><span>e</span>Startup</a></h1>
+        <h1><a href="#body" class="scrollto"><span>Class</span>LINK</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -75,8 +70,8 @@
   ============================-->
   <section id="hero" class="wow fadeIn">
     <div class="hero-container">
-      <h1>Welcome to eStartups</h1>
-      <h2>Elegant Bootstrap Template for Startups, Apps &amp; more...</h2>
+      <h1>Welcome to CLASSLINK</h1>
+      <h2>Elegant Bootstrap Template for ClassLink, Apps &amp; more...</h2>
       <img src="img/hero-img.png" alt="Hero Imgs">
       <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
       <div class="btns">
@@ -156,7 +151,7 @@
         <div class="col-md-7 col-lg-5">
           <div class="about-content">
 
-            <h2><span>eStartup</span>UI Design Mobile </h2>
+            <h2><span>ClassLink</span>UI Design Mobile </h2>
             <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
             </p>
 
@@ -322,7 +317,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-6 col-md-4 col-lg-3">
+        <!--<div class="col-md-6 col-md-4 col-lg-3">
           <div class="team-block bottom">
             <img src="img/team/1.jpg" class="img-responsive" alt="img">
             <div class="team-content">
@@ -335,9 +330,9 @@
               <h4>Kimberly Tran</h4>
             </div>
           </div>
-        </div>
+        </div>-->
 
-       <div class="col-md-6 col-md-4 col-lg-3">
+       <div class="col-md-6 col-md-4 col-lg-3 ml-auto">
           <div class="team-block bottom">
             <img src="img/team/2.jpg" class="img-responsive" alt="img">
             <div class="team-content">
@@ -352,7 +347,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-md-4 col-lg-3">
+        <div class="col-md-6 col-md-4 col-lg-3 mr-auto">
           <div class="team-block bottom">
             <img src="img/team/3.jpg" class="img-responsive" alt="img">
             <div class="team-content">
@@ -367,7 +362,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-md-4 col-lg-3">
+        <!--<div class="col-md-6 col-md-4 col-lg-3">
           <div class="team-block bottom">
             <img src="img/team/4.jpg" class="img-responsive" alt="img">
             <div class="team-content">
@@ -380,7 +375,7 @@
               <h4>Kimberly Tran</h4>
             </div>
           </div>
-        </div>
+        </div>-->
 
       </div>
     </div>
