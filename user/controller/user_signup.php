@@ -21,11 +21,7 @@ if (isset($_POST['usignup'])) {
      }
      else
      {
-         ?>
-         <script>
-         alert('user data in saved successfully.');
-         </script>
-         <?php
+         
          header('LOCATION:http://classlink.com/user/controller/suggetion.php');
      
 }}
