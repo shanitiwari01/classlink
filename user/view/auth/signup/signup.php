@@ -75,7 +75,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
                 <div class="card">
-                    <img src="http://classlink.com/assets/images/signup.svg" alt="Sign Up" />
+                    <img src="http://classlink.com/assets/images/signup.svg" alt="Sign Up" class="mt-5" />
                 </div>
             </div>
         </div>
