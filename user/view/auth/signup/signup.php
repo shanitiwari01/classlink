@@ -38,19 +38,19 @@
                     </div>
                     <div class="body">
                         <div class="input-group mb-2">
-                            <input type="text" class="form-control" value="<?php echo $run['user_name']; ?>" name="username">
+                            <input type="text" class="form-control" value="<?php echo $run['user_name']; ?>" name="username" required>
                         </div>
                         <div class="input-group mb-2">
-                            <input type="text" class="form-control" value="<?php echo $run['user_email']; ?>" name="email">
+                            <input type="text" class="form-control" value="<?php echo $run['user_email']; ?>" name="email" required>
                             <div class="input-group-append">
                             </div>
                         </div>                        
                         <div class="input-group mb-2">
-                            <input type="password" class="form-control" placeholder="Password" name="password">                         
+                            <input type="password" class="form-control" placeholder="Password" name="password" required>                         
                         </div>
                         <div class="form-group">
                         
-                          <select class="form-control" id="sel1" placeholder="Select Your Course" name="course">
+                          <select class="form-control" id="sel1" placeholder="Select Your Course" name="course" required>
                           
                           <option>Select Your Course</option>
                           <option>M.B.S</option>
@@ -59,7 +59,7 @@
                           </select>
                           </div>
                         <div class="input-group mb-2">
-                            <input type="file" class="form-control" placeholder="Picture" name="user_pic">                              
+                            <input type="file" class="form-control" placeholder="Picture" name="user_pic" required>                              
                         </div>
                         <div class="checkbox">
                             <input id="remember_me" type="checkbox">
