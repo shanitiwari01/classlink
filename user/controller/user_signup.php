@@ -1,5 +1,6 @@
 <?php
 include('C:/xampp/htdocs/classlink/database/dbcon.php');
+session_start();
 if (isset($_POST['usignup'])) {
     $id=$_POST['id'];
     $name=$_POST['username'];
@@ -16,13 +17,24 @@ if (isset($_POST['usignup'])) {
      `user_password` = '$password' , `user_image` ='$imagename' WHERE `user_id` = '$id' ";
      
      $result=mysqli_query($con,$qry);
+     $query=" SELECT * FROM `m_user` WHERE `user_id`='$id'";
+     $run=mysqli_query($con,$query);
+     $data=mysqli_fetch_assoc($run);
      if (!$result) {
       echo"error";
      }
      else
      {
+         $_SESSION['user_id']=$data['user_id'];
+         $_SESSION['name']=$data['user_name'];
+         $_SESSION['email']=$data['user_email'];
+         $_SESSION['user_course']=$data['user_course'];
          
-         header('LOCATION:http://classlink.com/user/controller/suggetion.php');
+       
+        
+          
+         header('LOCATION:http://classlink.com/user/controller/suggetion/suggetion.php');
+         
      
 }}
 
