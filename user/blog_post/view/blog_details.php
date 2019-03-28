@@ -161,17 +161,30 @@
 </aside>
 
 
+<?php 
 
-<section class="content blog-page">
+include('C:/xampp/htdocs/classlink/database/dbcon.php');
+
+$post_id=$_GET['post_id'];
+
+$qry=" SELECT * FROM `post` WHERE `post_id`= '$post_id'";
+$run=mysqli_query($con,$qry);
+$result = mysqli_fetch_array($run);
+
+
+     ?>
+
+
+<section class="content">
     <div class="body_scroll">
         <div class="block-header">
             <div class="row">
                 <div class="col-lg-7 col-md-6 col-sm-12">
-                    <h2>Blog List</h2>
+                    <h2>Blog Detail</h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index-2.html"><i class="zmdi zmdi-home"></i> Aero</a></li>
                         <li class="breadcrumb-item"><a href="blog-dashboard.html">Blog</a></li>
-                        <li class="breadcrumb-item active">Blog List</li>
+                        <li class="breadcrumb-item active">Blog Detail</li>
                     </ul>
                     <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
                 </div>
@@ -184,21 +197,9 @@
             <div class="row">
                 <div class="col-lg-8 col-md-12">
                     <div class="card">
-
-                    <?php
-                    include('C:/xampp/htdocs/classlink/database/dbcon.php');
-                    $qry=" SELECT * FROM `post` WHERE `status`= 'Y' ";
-                    $run=mysqli_query($con,$qry);
-                    while ($result = mysqli_fetch_array($run)) {
-                    
-                    
-
-                    ?>
-
-
                         <div class="blogitem mb-5">
                             <div class="blogitem-image">
-                                <a href="http://classlink.com/user/blog_post/view/blog_details.php?post_id=<?php echo $result['post_id']; ?>"><img src="http://classlink.com/assets/images/post_pic/<?php echo $result['image']; ?>" alt="blog image"></a>
+                                <a href="blog-details.html"><img src="http://classlink.com/assets/images/post_pic/<?php echo $result['image']; ?>" alt="blog image"></a>
                                 <span class="blogitem-date">Monday, December 15, 2018</span>
                             </div>
                             <div class="blogitem-content">
@@ -216,27 +217,77 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <h5><a href="http://classlink.com/user/blog_post/view/blog_details.php?post_id=<?php echo $result['post_id']; ?>"><?php  echo $result['title']; ?></a></h5>
-                                <p><?php echo $result['discription']; ?></p>
-                                <a href="http://classlink.com/user/blog_post/view/blog_details.php?post_id=<?php echo $result['post_id']; ?>" class="btn btn-info">Read More</a>
+
+                               
+
+                                 
+                                <h5><a href="blog-details.html"><?php echo $result['title']; ?></a></h5>
+                                <p><?php  echo $result['discription'];  ?></p>
+                                <blockquote class="blockquote">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam vulputate tortor nec commodo ultricies lectus nisl facilisis enim trpis.</p>
+                                    <footer>by <a href="blog.html">ThemeMakker</a></footer>
+                                </blockquote>
+                                <p>The point of using Lorem of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incdidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullaco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaeca cupidatat non proident.</p>
                             </div>
                         </div>
-                       <?php
-                       }
-                       ?>
-
-
-
-                        
                     </div>
                     <div class="card">
-                        <ul class="pagination pagination-primary">
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
-                            <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
-                        </ul>
+                        <div class="header">
+                            <h2><strong>Comments</strong> (2)</h2>
+                        </div>
+                        <div class="">
+                            <ul class="comment-reply list-unstyled">
+                                <li>
+                                    <div class="icon-box"><img class="img-fluid img-thumbnail" src="http://classlink.com/assets/images/sm/avatar2.jpg" alt="Awesome Image"></div>
+                                    <div class="text-box">
+                                        <h5>Kareem Todd</h5>
+                                        <span class="comment-date">Wednesday, October 17, 2018 at 4:00PM.</span>
+                                        <a href="javascript:void(0);" class="replybutton"><i class="zmdi zmdi-mail-reply-all"></i> Reply</a>
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-box"><img class="img-fluid img-thumbnail" src="http://classlink.com/assets/images/sm/avatar1.jpg" alt="Awesome Image"></div>
+                                    <div class="text-box">
+                                        <h5>Stillnot david</h5>
+                                        <span class="comment-date">Wednesday, October 17, 2018 at 4:00PM.</span>
+                                        <a href="javascript:void(0);" class="replybutton"><i class="zmdi zmdi-mail-reply-all"></i> Reply</a>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                                    </div>
+                                </li>
+                            </ul>                                        
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <h2><strong>Leave</strong> a Comment</h2>
+                        </div>
+                        <div class="">
+                            <small>Your email address will not be published. Required fields are marked*</small>
+                            <form class="row comment-form mt-2" action="http://classlink.com/user/blog_post/controller/comment.php" method="post" id="commentdata">
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="hidden" class="form-control" value="<?php echo $result['post_id']; ?>" name="post_id">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea rows="4" class="form-control no-resize" name="com" placeholder="Please type what you want..."></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn btn-primary" onClick="comment();">SUBMIT</button>
+                                </div>
+                                 <!-------script ------->
+                            <script>
+                                    function comment(){
+                                      document.getElementById('commentdata').submit();
+                                   }
+                                    </script>
+                                    <!-----script--------->
+
+
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
@@ -272,28 +323,28 @@
                         <div class="body">
                             <ul class="list-unstyled mb-0 widget-recentpost">
                                 <li>
-                                    <a href="blog-details.html"><img src="http://classlink.com/assets/images/image-gallery/1.jpg" alt="blog thumbnail"></a>
+                                    <a href="blog-details.html"><img src="http://classlink.com/assets/images/post_pic/1.jpg" alt="blog thumbnail"></a>
                                     <div class="recentpost-content">
                                         <a href="blog-details.html">Fundamental analysis services</a>
                                         <span>August 01, 2018</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="blog-details.html"><img src="http://classlink.com/assets/images/image-gallery/2.jpg" alt="blog thumbnail"></a>
+                                    <a href="blog-details.html"><img src="http://classlink.com/assets/images/post_pic/2.jpg" alt="blog thumbnail"></a>
                                     <div class="recentpost-content">
                                         <a href="blog-details.html">Steps to a successful Business</a>
                                         <span>November 01, 2018</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="blog-details.html"><img src="http://classlink.com/assets/images/image-gallery/3.jpg" alt="blog thumbnail"></a>
+                                    <a href="blog-details.html"><img src="http://classlink.com/assets/images/post_pic/3.jpg" alt="blog thumbnail"></a>
                                     <div class="recentpost-content">
                                         <a href="#blog-details.html">Development Progress Conference</a>
                                         <span>December 01, 2018</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="blog-details.html"><img src="http://classlink.com/assets/images/image-gallery/12.jpg" alt="blog thumbnail"></a>
+                                    <a href="blog-details.html"><img src="http://classlink.com/assets/images/post_pic/12.jpg" alt="blog thumbnail"></a>
                                     <div class="recentpost-content">
                                         <a href="blog-details.html">Steps to a successful Business</a>
                                         <span>December 15, 2018</span>
@@ -354,7 +405,6 @@
         </div>
     </div>
 </section>
-
 
 
 
