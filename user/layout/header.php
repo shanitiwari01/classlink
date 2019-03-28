@@ -11,7 +11,7 @@ include 'file:///C:/xampp/htdocs/classlink/user/controller/authentication/check_
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
 
-<title>:: Aero Bootstrap4 Admin :: Normal Tables</title>
+<title>ClassLINK</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- Favicon-->
 <link rel="stylesheet" href="http://classlink.com/assets/bootstrap/bootstrap.min.css">
