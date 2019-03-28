@@ -179,7 +179,7 @@
                         <div class="header">
                         </div>
                       <div class="body">
-                <form  action="http://classlink.com/user/add/controller/add_studentdata.php" method="post" id="addstudent">
+                <form  action="http://classlink.com/user/add/controller/add_studentdata.php" method="post" id="add_student">
 
                     <div class="form-group">
                              <label for="name"> Name</label>
@@ -197,13 +197,13 @@
                            </div>
 
                            <div class="form-group">
-                           <button type="submit" class="btn btn-danger" onClick="addstudent();" name="submit">Add Student</button>
+                           <button type="submit" class="btn btn-danger" onClick="adds();" >Add Student</button>
                            </div>
 
                             <!-------script ------->
                          <script>
-                         function addstudent(){
-                           document.getElementById('addstudent').submit();
+                         function adds(){
+                           document.getElementById('add_student').submit();
                         }
                          </script>
                          <!-----script--------->
