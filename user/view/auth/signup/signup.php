@@ -48,16 +48,7 @@
                         <div class="input-group mb-2">
                             <input type="password" class="form-control" placeholder="Password" name="password" required>                         
                         </div>
-                        <div class="form-group">
                         
-                          <select class="form-control" id="sel1" placeholder="Select Your Course" name="course" required>
-                          
-                          <option>Select Your Course</option>
-                          <option>M.B.S</option>
-                          <option>M.Sci</option>
-                          <option>MBA</option>
-                          </select>
-                          </div>
                         <div class="input-group mb-2">
                             <input type="file" class="form-control" placeholder="Picture" name="user_pic" required>                              
                         </div>

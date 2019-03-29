@@ -226,3 +226,4 @@
         <li><a href="http://classlink.com/user/controller/authentication/logout.php" class="mega-menu" title="Sign Out"><i class="zmdi zmdi-power"></i></a></li>
     </ul>
 </div>
+</body>

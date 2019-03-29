@@ -6,7 +6,6 @@
         <p>Please wait...</p>
     </div>
 </div>
-
 <!-- Overlay For Sidebars -->
 <div class="overlay"></div>
 

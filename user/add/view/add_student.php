@@ -191,11 +191,25 @@
                            <input type="email" class="form-control" name="email" required>
                            </div>
 
-                           <div class="form-group">
-                           <label for="course">Course</label>
-                           <input type="text" class="form-control" name="course" required>
-                           </div>
+                           <div>
+                             <label for="list">Course</label>
+                             <select name="list">
+                             <option value=''>-----SELECT YOUR COURSE-----</option>
+             <?php 
+                include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
+                $result=mysqli_query($con,'SELECT * FROM `user_course`'); 
+                while($row=mysqli_fetch_assoc($result)) { 
+                    echo "<option>".$row[course_name]."</option>"; 
+                } 
+            ?> 
+                </select> 
+            </div> 
 
+
+
+                        
+                          
+                           
                            <div class="form-group">
                            <button type="submit" class="btn btn-danger" onClick="adds();" >Add Student</button>
                            </div>

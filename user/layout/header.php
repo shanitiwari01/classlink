@@ -62,13 +62,13 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
                 </div>
             
             
-           <a href="index-2.html"><i class="zmdi zmdi-collection-folder-image"></i><span>Course</span></a>
+           <a href="http://classlink.com/user/view/deshboard.php"><i class="zmdi zmdi-collection-folder-image"></i><span>Course</span></a>
            
-           <a href="index-2.html"><i class="zmdi zmdi-male-alt"></i><span>Student</span></a>
+           <a href="http://classlink.com/user/add/view/show_student.php"><i class="zmdi zmdi-male-alt"></i><span>Student</span></a>
            
-           <a href="index-2.html"><i class=""></i><i class="zmdi zmdi-account"></i><span>Teacher</span></a>
+           <a href="http://classlink.com/user/add/view/show_techers.php"><i class=""></i><i class="zmdi zmdi-account"></i><span>Teacher</span></a>
            
-           <a href="index-2.html"><i class="zmdi zmdi-blogger"></i><span>Blogger</span></a>
+           <a href="http://classlink.com/user/blog_post/view/post_list_view.php"><i class="zmdi zmdi-blogger"></i><span>Blogger</span></a>
            
            
            
@@ -81,4 +81,3 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
     </div>
 </aside>
 </body>
-</html>
