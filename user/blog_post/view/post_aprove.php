@@ -185,8 +185,8 @@
                                     <thead>
                                         <tr>
                                               
-                                            <th>POST IMAGE</th>
                                             <th>POST TITLE</th>
+                                            <th>POST IMAGE</th>
                                             <th>APPROVED</th>
                                             
 
@@ -205,7 +205,7 @@
                                     <tbody>
                                         <tr>
                                             <td><?php echo $result['title']; ?></td>
-                                            <td><img src="http://classlink.com/assets/images/post_pic/<?php echo $result['image']; ?>" width="50%" height="40%" ></td>
+                                            <td><img src="http://classlink.com/assets/images/post_pic/<?php echo $result['image']; ?>" width="50%" height="35%" ></td>
                                             <td><a href='http://classlink.com/user/blog_post/controller/post_approved.php?post_id=<?php echo $result['post_id'];?>' class='btn btn-danger'>Approved</a></td>
                                            
                                         </tr>

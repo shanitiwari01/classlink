@@ -13,7 +13,7 @@ $qry=" INSERT INTO `post_comment`( `post_id`, `user_id`, `comment`) VALUES
 $run=mysqli_query($con,$qry);
 
 if ($run) {
-    header('LOCATION:http://classlink.com/user/blog_post/view/post_list_view.php?=post_id'.$post_id);
+    header('LOCATION:http://classlink.com/user/blog_post/view/blog_details.php?post_id='.$post_id);
 }
 
 

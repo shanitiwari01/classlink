@@ -104,7 +104,7 @@
 
             <img src="img/svg/cloud.svg" alt="img" class="img-fluid">
             <h4>introducing whatsapp</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <p></p>
             <a href="#">read more</a>
 
           </div>
@@ -115,7 +115,7 @@
 
             <img src="img/svg/planet.svg" alt="img" class="img-fluid">
             <h4>user friendly interface</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <p></p>
             <a href="#">read more</a>
 
           </div>
@@ -126,7 +126,7 @@
 
             <img src="img/svg/asteroid.svg" alt="img" class="img-fluid">
             <h4>build the app everyone love</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <p></p>
             <a href="#">read more</a>
 
           </div>
@@ -178,8 +178,8 @@
 
     <div class="container">
       <div class="section-title text-center">
-        <h2>Amazing Features.</h2>
-        <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+        <h2>Feature</h2>
+        <p class="separator">It contains all the security of social media and alse control access to the social</p>
       </div>
     </div>
 
@@ -189,64 +189,88 @@
         <div class="col-md-6 col-lg-3">
           <div class="feature-block">
             <img src="img/svg/paint-palette.svg" alt="img" class="img-fluid">
-            <h4>creative design</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h4>Login</h4>
+            <p>It contains all the security of social media and also control access to the social media.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-block">
             <img src="img/svg/vector.svg" alt="img" class="img-fluid">
-            <h4>Retina Ready</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h4>Suggestion</h4>
+            <p>Suggestion box is use for suggestion new ideas for collage to the principle.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-block">
             <img src="img/svg/design-tool.svg" alt="img" class="img-fluid">
-            <h4>easy to use</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h4>Letter Box</h4>
+            <p>It is use for write a application to the principle any type of subject.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-block">
             <img src="img/svg/asteroid.svg" alt="img" class="img-fluid">
-            <h4>Free Updates</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h4>Declaration Box</h4>
+            <p>The purpose of declaration box solve the doubt of student on any specific time.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-block">
             <img src="img/svg/asteroid.svg" alt="img" class="img-fluid">
-            <h4>Free Updates</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h4>Friends</h4>
+            <p>The module is use for make a friends between two person.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-block">
             <img src="img/svg/cloud-computing.svg" alt="img" class="img-fluid">
-            <h4>App store support</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h4>Post</h4>
+            <p>the purpose of post module to show information using file (vedio , photo).</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-block">
             <img src="img/svg/pixel.svg" alt="img" class="img-fluid">
-            <h4>Perfect Pixel</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h4>Notification </h4>
+            <p>Notification in form you if any change related to you on social media. </p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-block">
             <img src="img/svg/code.svg" alt="img" class="img-fluid">
-            <h4>clean codes</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h4>Chating</h4>
+            <p>communicate with any person in the idlage use this module.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <img src="img/svg/code.svg" alt="img" class="img-fluid">
+            <h4>SMS</h4>
+            <p>If any message send to the any person in local messager , working in module.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <img src="img/svg/code.svg" alt="img" class="img-fluid">
+            <h4>Announcement</h4>
+            <p>Important Announcement is done by this module this modul is only access by the only admin.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <img src="img/svg/code.svg" alt="img" class="img-fluid">
+            <h4>Profile</h4>
+            <p>The profile module use for show the details of any person such as  there name photo , gmail ,number ets</p>
           </div>
         </div>
 
@@ -317,20 +341,7 @@
     <div class="container">
       <div class="row">
 
-        <!--<div class="col-md-6 col-md-4 col-lg-3">
-          <div class="team-block bottom">
-            <img src="img/team/1.jpg" class="img-responsive" alt="img">
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-              <span>manager</span>
-              <h4>Kimberly Tran</h4>
-            </div>
-          </div>
-        </div>-->
+        
 
        <div class="col-md-6 col-md-4 col-lg-3 ml-auto">
           <div class="team-block bottom">
@@ -362,20 +373,7 @@
           </div>
         </div>
 
-        <!--<div class="col-md-6 col-md-4 col-lg-3">
-          <div class="team-block bottom">
-            <img src="img/team/4.jpg" class="img-responsive" alt="img">
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-              <span>manager</span>
-              <h4>Kimberly Tran</h4>
-            </div>
-          </div>
-        </div>-->
+        
 
       </div>
     </div>
@@ -401,7 +399,7 @@
                   <div class="top-top">
 
                     <h2>Our Users Speack volumes us</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    <p>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                       specimen book. It has survived not only five centuries.</p>
                     <h4>Kimberly Tran<span>manager</span></h4>
 
@@ -412,7 +410,7 @@
                   <div class="top-top">
 
                     <h2>Our Users Speack volumes us</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    <p>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                       specimen book. It has survived not only five centuries.</p>
                     <h4>Henderson<span>manager</span></h4>
 
@@ -423,7 +421,7 @@
                   <div class="top-top">
 
                     <h2>Our Users Speack volumes us</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    <p>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                       specimen book. It has survived not only five centuries.</p>
                     <h4>David Spark<span>manager</span></h4>
 
@@ -719,7 +717,7 @@
           <div class="footer-logo">
 
             <a class="navbar-brand" href="#">eStartup</a>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+            <p>. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
 
           </div>
         </div>
