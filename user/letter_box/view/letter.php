@@ -1,4 +1,8 @@
 <?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
+<head>
+    <link rel="stylesheet" href="http://classlink.com/assets/plugin/summernote.css"/>
+    <link rel="stylesheet" href="http://classlink.com/assets/css/bootstrap-select.css" />
+</head>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -159,92 +163,67 @@
     </div>
 </aside>
 
-<section class="content">
+<section class="content blog-page">
     <div class="body_scroll">
         <div class="block-header">
             <div class="row">
                 <div class="col-lg-7 col-md-6 col-sm-12">
-                    <h2>Add Students</h2>
-                 
-            </div>
-            
-        </div>
-
-        <div class="container-fluid">
-       
-            <!-- Basic Table -->
-            <div class="row clearfix">
-                <div class="col-lg-7 col-md-12 col-sm-12 m-auto">
-                    <div class="card">
-                        <div class="header">
-                        </div>
-                      <div class="body">
-                <form  action="http://classlink.com/user/add/controller/add_studentdata.php" method="post" id="add_student">
-
-                    <div class="form-group">
-                             <label for="name"> Name</label>
-                             <input type="text" class="form-control" id="name" name="name" required>
-                           </div>
-
-                           <div class="form-group">
-                           <label for="email">Email</label>
-                           <input type="email" class="form-control" name="email" required>
-                           </div>
-
-                           <div>
-                             <label for="list">Course</label>
-                             <select name="course">
-                             <option value=''>-----SELECT YOUR COURSE-----</option>
-             <?php 
-                include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
-                $result=mysqli_query($con,'SELECT * FROM `user_course`'); 
-                while($row=mysqli_fetch_assoc($result)) { 
-                    echo "<option>".$row[course_name]."</option>"; 
-                } 
-            ?> 
-                </select> 
-            </div> 
-
-
-
-                        
-                          
-                           
-                           <div class="form-group">
-                           <button type="submit" class="btn btn-danger" onClick="adds();" >Add Student</button>
-                           </div>
-
-                            <!-------script ------->
-                         <script>
-                         function adds(){
-                           document.getElementById('add_student').submit();
-                        }
-                         </script>
-                         <!-----script--------->
-
-
-                </form>
-
-                      </div>
-                        </div>
-                    </div>
+                    <h2>Blog Post</h2>
+                   
+                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">                
+                    <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form action="http://classlink.com/user/letter_box/controller/letter_box.php" method="post" id="postdata">
+                    <div class="card">
+                        <div class="body">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Letter title" name="title" />
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="body">
+                        <div class="form-group">
+                        <textarea name="Letter_discription" class="form-control" placeholder="Letter Discription . . ."></textarea>
+                        </div>
 
-                        
+                        <div class="form-group">
+                            <input name="date" type="date" class="form-control" placeholder="Letter Date">
+                            </div>
+                            
+                            <button type="button" class="btn btn-info waves-effect m-t-20" onClick="post();">SEND LETTER</button>
+                        </div>
+                    </div>
+                            <!-------script ------->
+                            <script>
+                                    function post(){
+                                      document.getElementById('postdata').submit();
+                                   }
+                                    </script>
+                                    <!-----script--------->
 
-          
-            <!-- #END# Hover Rows --> 
+                </form>
+                </div>            
+            </div>
         </div>
     </div>
 </section>
-
 <!-- Jquery Core Js --> 
 <script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 
-<script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
-</body>
+<script src="http://classlink.com/assets/bundles/dropzone.js"></script> <!-- Dropzone Plugin Js --> 
 
+<script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+<script src="http://classlink.com/assets/bundles/summernote.js"></script>
+</body>
 
 </html>

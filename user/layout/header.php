@@ -12,7 +12,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
 <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
 
 <title>:: classlink ::</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://classlink.com/assets/images/logo.png" type="image/x-icon">
 <!-- Favicon-->
 <link rel="stylesheet" href="http://classlink.com/assets/bootstrap/bootstrap.min.css">
 <!-- Custom Css -->
