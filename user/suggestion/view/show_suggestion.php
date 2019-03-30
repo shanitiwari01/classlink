@@ -191,8 +191,7 @@
                     $run=mysqli_query($con,$qry);
                     while ($result = mysqli_fetch_array($run)) {
                     
-                    
-
+                       
                     ?>
 
 
@@ -204,14 +203,7 @@
                                         <span><i class="zmdi zmdi-account"></i>By <a href="javascript:void(0);">Michael</a></span>
                                         <span><i class="zmdi zmdi-comments"></i><a href="blog-details.html">Comments(3)</a></span>
                                     </div>
-                                    <div class="blogitem-share">
-                                        <ul class="list-unstyled mb-0">
-                                            <li><a href="javascript:void(0);"><i class="zmdi zmdi-facebook-box"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="zmdi zmdi-instagram"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="zmdi zmdi-twitter-box"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="zmdi zmdi-linkedin-box"></i></a></li>
-                                        </ul>
-                                    </div>
+                                   
                                 </div>
                                 <h5><?php  echo $result['title']; ?></h5>
                                 <p><?php echo $result['comment']; ?></p>

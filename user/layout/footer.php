@@ -19,42 +19,44 @@
                 <li class="header">App Sortcute</li>
                 <li class="body">
                     <ul class="menu app_sortcut list-unstyled">
+                        
                         <li>
-                            <a href="image-gallery.html">
-                                <div class="icon-circle mb-2 bg-blue"><i class="zmdi zmdi-camera"></i></div>
-                                <p class="mb-0">Photos</p>
+                            <a href="http://classlink.com/user/Letter_box/view/show_letter.php">
+                                <div class="icon-circle mb-2 "><img src="http://classlink.com/assets/images/icons/letter box.jpg" alt="Letter box" ></div>
+                                <p class="mb-0">Letter Box</p>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">
-                                <div class="icon-circle mb-2 bg-amber"><i class="zmdi zmdi-translate"></i></div>
-                                <p class="mb-0">Translate</p>
+                            <a href="http://classlink.com/user/Announcement/view/show_announce.php">
+                                <div class="icon-circle mb-2 "><img src="http://classlink.com/assets/images/icons/announcement.png" alt="Announcement" ></div>
+                                <p class="mb-0">Announce</p>
                             </a>
                         </li>
                         <li>
-                            <a href="events.html">
-                                <div class="icon-circle mb-2 bg-green"><i class="zmdi zmdi-calendar"></i></div>
-                                <p class="mb-0">Calendar</p>
+                            <a href="http://classlink.com/user/timetable/view/show_timetable.php">
+                                <div class="icon-circle mb-2 "><img src="http://classlink.com/assets/images/icons/timetable.jpg" alt="Timetable" ></div>
+                                <p class="mb-0">Timetable</p>
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html">
-                                <div class="icon-circle mb-2 bg-purple"><i class="zmdi zmdi-account-calendar"></i></div>
-                                <p class="mb-0">Contacts</p>
+                            <a href="http://classlink.com/user/result/view/show_result.php">
+                                <div class="icon-circle mb-2 "><img src="http://classlink.com/assets/images/icons/result1.jpg" alt="Result" ></div>
+                                <p class="mb-0">Result</p>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">
-                                <div class="icon-circle mb-2 bg-red"><i class="zmdi zmdi-tag"></i></div>
-                                <p class="mb-0">News</p>
+                            <a href="http://classlink.com/user/event/view/show_event.php">
+                                <div class="icon-circle mb-2"><img src="http://classlink.com/assets/images/icons/event1.png" alt="Event" ></div>
+                                <p class="mb-0">Events</p>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">
-                                <div class="icon-circle mb-2 bg-grey"><i class="zmdi zmdi-map"></i></div>
-                                <p class="mb-0">Maps</p>
+                            <a href="http://classlink.com/user/suggestion/view/show_suggestion.php">
+                                <div class="icon-circle mb-2 "><img src="http://classlink.com/assets/images/icons/suggestion.png" alt="Suggestion" ></div>
+                                <p class="mb-0">Suggestion</p>
                             </a>
                         </li>
+                        
                     </ul>
                 </li>
             </ul>
@@ -69,7 +71,7 @@
                     <ul class="menu list-unstyled">
                         <li>
                             <a href="javascript:void(0);">
-                                <div class="icon-circle bg-blue"><i class="zmdi zmdi-account"></i></div>
+                                <div class="icon-circle e"><i class="zmdi zmdi-account"></i></div>
                                 <div class="menu-info">
                                     <h4>8 New Members joined</h4>
                                     <p><i class="zmdi zmdi-time"></i> 14 mins ago </p>
@@ -78,7 +80,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);">
-                                <div class="icon-circle bg-amber"><i class="zmdi zmdi-shopping-cart"></i></div>
+                                <div class="icon-circle er"><i class="zmdi zmdi-shopping-cart"></i></div>
                                 <div class="menu-info">
                                     <h4>4 Sales made</h4>
                                     <p><i class="zmdi zmdi-time"></i> 22 mins ago </p>
@@ -87,7 +89,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);">
-                                <div class="icon-circle bg-red"><i class="zmdi zmdi-delete"></i></div>
+                                <div class="icon-circle "><i class="zmdi zmdi-delete"></i></div>
                                 <div class="menu-info">
                                     <h4><b>Nancy Doe</b> Deleted account</h4>
                                     <p><i class="zmdi zmdi-time"></i> 3 hours ago </p>
@@ -96,7 +98,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);">
-                                <div class="icon-circle bg-green"><i class="zmdi zmdi-edit"></i></div>
+                                <div class="icon-circle en"><i class="zmdi zmdi-edit"></i></div>
                                 <div class="menu-info">
                                     <h4><b>Nancy</b> Changed name</h4>
                                     <p><i class="zmdi zmdi-time"></i> 2 hours ago </p>
@@ -105,7 +107,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);">
-                                <div class="icon-circle bg-grey"><i class="zmdi zmdi-comment-text"></i></div>
+                                <div class="icon-circle y"><i class="zmdi zmdi-comment-text"></i></div>
                                 <div class="menu-info">
                                     <h4><b>John</b> Commented your post</h4>
                                     <p><i class="zmdi zmdi-time"></i> 4 hours ago </p>
@@ -114,7 +116,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);">
-                                <div class="icon-circle bg-purple"><i class="zmdi zmdi-refresh"></i></div>
+                                <div class="icon-circle ple"><i class="zmdi zmdi-refresh"></i></div>
                                 <div class="menu-info">
                                     <h4><b>John</b> Updated status</h4>
                                     <p><i class="zmdi zmdi-time"></i> 3 hours ago </p>
@@ -123,7 +125,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);">
-                                <div class="icon-circle bg-light-blue"><i class="zmdi zmdi-settings"></i></div>
+                                <div class="icon-circle ht-blue"><i class="zmdi zmdi-settings"></i></div>
                                 <div class="menu-info">
                                     <h4>Settings Updated</h4>
                                     <p><i class="zmdi zmdi-time"></i> Yesterday </p>

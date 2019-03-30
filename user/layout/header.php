@@ -40,7 +40,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
         ?>
            
                 <div class="user-info">
-                    <a class="image" href="profile.html"><img src="http://classlink.com/assets/images/user_signup/<?php echo $run['image']; ?>" alt="User"></a>
+                    <a class="image" href="profile.html"><img src="http://classlink.com/assets/images/user_signup/<?php echo $run['user_image']; ?>" alt="User"></a>
                     <div class="detail">
                         <h4><?php echo $run['user_name']; ?></h4>
                         <small><?php

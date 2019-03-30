@@ -30,19 +30,19 @@
                     </div>
                     <div class="body">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Username" name="username">
+                            <input type="text" class="form-control" placeholder="Username" name="username" required>
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="zmdi zmdi-account-circle"></i></span>
                             </div>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Enter Email" name="email">
+                            <input type="text" class="form-control" placeholder="Enter Email" name="email" required>
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="zmdi zmdi-email"></i></span>
                             </div>
                         </div>                        
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Password" name="password">
+                            <input type="password" class="form-control" placeholder="Password" name="password" required>
                             <div class="input-group-append">                                
                                 <span class="input-group-text"><i class="zmdi zmdi-lock"></i></span>
                             </div>                            

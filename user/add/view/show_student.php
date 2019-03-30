@@ -166,8 +166,11 @@
             <div class="row">
                 <div class="col-lg-7 col-md-6 col-sm-12">
                     <h2>STUDENT LIST</h2>
+                    <a href="http://classlink.com/user/add/view/add_student.php" class="btn btn-primary ">Add Students</a>
+                    
                  
             </div>
+            
             
         </div>
 

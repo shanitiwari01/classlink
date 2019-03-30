@@ -192,7 +192,7 @@
                     $run=mysqli_query($con,$qry);
                     while ($result = mysqli_fetch_array($run)) {
                     
-                    
+                        $date = date_create($result['created_at']);
 
                     ?>
 
@@ -200,7 +200,7 @@
                         <div class="blogitem mb-5">
                             <div class="blogitem-image">
                                 <a href=""><img src="http://classlink.com/assets/images/result/<?php echo $result['image']; ?>" alt="blog image"></a>
-                                <span class="blogitem-date">Monday, December 15, 2018</span>
+                                <span class="blogitem-date"><?php echo date_format($date, 'g:ia \o\n l jS F Y');  ?></span>
                             </div>
                             <div class="blogitem-content">
                                 <div class="blogitem-header">
@@ -208,14 +208,7 @@
                                         <span><i class="zmdi zmdi-account"></i>By <a href="javascript:void(0);">Michael</a></span>
                                         <span><i class="zmdi zmdi-comments"></i><a href="blog-details.html">Comments(3)</a></span>
                                     </div>
-                                    <div class="blogitem-share">
-                                        <ul class="list-unstyled mb-0">
-                                            <li><a href="javascript:void(0);"><i class="zmdi zmdi-facebook-box"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="zmdi zmdi-instagram"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="zmdi zmdi-twitter-box"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="zmdi zmdi-linkedin-box"></i></a></li>
-                                        </ul>
-                                    </div>
+                                   
                                 </div>
                                 <h5><?php  echo $result['title']; ?></a></h5>
                                 <p><?php echo $result['description']; ?></p>
