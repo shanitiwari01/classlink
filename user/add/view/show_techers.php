@@ -1,4 +1,4 @@
-<?php include 'file:///C:/xampp/htdocs/classlink/user/layout/header.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
 
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
@@ -11,7 +11,7 @@
 <!-- Overlay For Sidebars -->
 <div class="overlay"></div>
 
-<?php include 'file:///C:/xampp/htdocs/classlink/user/layout/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/footer.php'; ?>
 
 <!-- Right Sidebar -->
 <aside id="rightsidebar" class="right-sidebar">
@@ -194,7 +194,7 @@
                                 </thead>
                                 <?php
                             
-                                include('C:/xampp/htdocs/classlink/database/dbcon.php');
+                                include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
                                   $qry="SELECT * FROM `m_user` WHERE `user_role_id`= 3";
                                   $run=mysqli_query($con,$qry);
                                   while ($result = mysqli_fetch_array($run)) {

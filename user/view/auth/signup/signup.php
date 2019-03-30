@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-lg-4 col-sm-12">
             <?php
-            include 'C:/xampp/htdocs/classlink/database/dbcon.php';
+            include $_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php';
             $user_id=$_GET['id'];
             $m_user=" SELECT * FROM `m_user` WHERE `user_id`='$user_id'";
             $result=mysqli_query($con,$m_user);

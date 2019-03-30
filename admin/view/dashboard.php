@@ -1,4 +1,4 @@
-<?php include 'file:///C:/xampp/htdocs/classlink/admin/layout/header.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/admin/layout/header.php'; ?>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -10,7 +10,7 @@
 <!-- Overlay For Sidebars -->
 <div class="overlay"></div>
 
-<?php include 'file:///C:/xampp/htdocs/classlink/admin/layout/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/admin/layout/footer.php'; ?>
 
 <!-- Right Sidebar -->
 <aside id="rightsidebar" class="right-sidebar">
@@ -191,7 +191,7 @@
                                         </tr>
                                     </thead>
                                     <?php
-                                    include('C:/xampp/htdocs/classlink/database/dbcon.php');
+                                    include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
                                       $qry="SELECT * FROM `contact_us` ";
                                       $run=mysqli_query($con,$qry);
                                       while ($result = mysqli_fetch_array($run)) {
