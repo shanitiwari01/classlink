@@ -1,5 +1,5 @@
 <?php
-include('C:/xampp/htdocs/classlink/database/dbcon.php');
+include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
 session_start();
 $email=$_POST['email'];
 $password=$_POST['password'];

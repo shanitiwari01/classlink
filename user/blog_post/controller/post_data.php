@@ -1,5 +1,5 @@
 <?php
-include('C:/xampp/htdocs/classlink/database/dbcon.php');
+include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
 session_start();
 $user_id= $_SESSION['user']['user_id'];
 $blog_title=$_POST['blog_title'];

@@ -1,4 +1,3 @@
- 
 <?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
@@ -237,7 +236,7 @@
                                     </thead>
                                     <?php
                                 
-                                    include('C:/xampp/htdocs/classlink/database/dbcon.php');
+                                    include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
                                       $qry="SELECT * FROM `user_course` ";
                                       $run=mysqli_query($con,$qry);
                                       while ($result = mysqli_fetch_array($run)) {

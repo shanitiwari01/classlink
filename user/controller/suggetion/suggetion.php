@@ -167,7 +167,7 @@
 <div class="container-fluid">
             <div class="row clearfix">
             <?php
-                        include('C:/xampp/htdocs/classlink/database/dbcon.php');
+                        include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
                         
                         $ucourse=$_SESSION['user_course'];
                         $qry=" SELECT * FROM `m_user` WHERE `user_course`='$ucourse'";

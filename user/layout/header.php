@@ -1,8 +1,7 @@
 <?php
-
+session_start();
 include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php';
 ?>
-<!doctype html>
 <html class="no-js " lang="en">
 
 

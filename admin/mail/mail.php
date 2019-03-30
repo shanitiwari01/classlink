@@ -1,5 +1,5 @@
 <?php
- include('C:/xampp/htdocs/classlink/database/dbcon.php');
+ include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
  $contact_id=$_GET['id'];
  $contactus="SELECT * FROM `contact_us` WHERE `contact_id`='$contact_id'";
  $run=mysqli_query($con,$contactus);

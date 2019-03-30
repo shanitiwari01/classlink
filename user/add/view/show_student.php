@@ -194,7 +194,7 @@
                                 </thead>
                                 <?php
                             
-                                include('C:/xampp/htdocs/classlink/database/dbcon.php');
+                                include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
                                   $qry="SELECT * FROM `m_user` WHERE `user_role_id`= 2";
                                   $run=mysqli_query($con,$qry);
                                   while ($result = mysqli_fetch_array($run)) {

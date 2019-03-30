@@ -1,5 +1,5 @@
 <?php
-include('../../../database/dbcon.php');
+include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
 $user = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];

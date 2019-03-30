@@ -1,4 +1,4 @@
-<?php include 'file:///C:/xampp/htdocs/classlink/user/layout/header.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
 <head>
     <link rel="stylesheet" href="http://classlink.com/assets/plugin/summernote.css"/>
     <link rel="stylesheet" href="http://classlink.com/assets/css/bootstrap-select.css" />
@@ -14,7 +14,7 @@
 <!-- Overlay For Sidebars -->
 <div class="overlay"></div>
 
-<?php include 'file:///C:/xampp/htdocs/classlink/user/layout/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/footer.php'; ?>
 
 <!-- Right Sidebar -->
 <aside id="rightsidebar" class="right-sidebar">
