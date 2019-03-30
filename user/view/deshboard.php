@@ -1,5 +1,5 @@
  
-<?php include 'file:///C:/xampp/htdocs/classlink/user/layout/header.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -11,7 +11,7 @@
 <!-- Overlay For Sidebars -->
 <div class="overlay"></div>
 
-<?php include 'file:///C:/xampp/htdocs/classlink/user/layout/footer.php';  ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/footer.php';  ?>
 
 <!-- Right Sidebar -->
 <aside id="rightsidebar" class="right-sidebar">

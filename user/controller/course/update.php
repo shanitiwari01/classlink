@@ -1,5 +1,5 @@
 <?php
-include 'C:/xampp/htdocs/classlink/database/dbcon.php';
+include $_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php';
 
 
 
