@@ -19,7 +19,7 @@ if (isset($_SESSION['user'])) {
 
 <title>:: Classlink.com ::</title>
 <!-- Favicon-->
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://classlink.com/assets/images/logo.png" type="image/x-icon">
 <!-- Custom Css -->
 <link rel="stylesheet" href="http://classlink.com/assets/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="http://classlink.com/assets/css/style.min.css"> 

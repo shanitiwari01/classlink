@@ -183,38 +183,35 @@
 
                     <div class="form-group">
                              <label for="name"> Name</label>
-                             <input type="text" class="form-control" id="name" name="name" required>
+                             <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" required>
                            </div>
 
-                           <div class="form-group">
+                           <div class="form-groupx">
                            <label for="email">Email</label>
-                           <input type="email" class="form-control" name="email" required>
+                           <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required>
                            </div>
 
                            <div>
 
-                             <!-- <label >Course</label> -->
-                             <!-- <select name="course" class="form-control"> -->
-                             <!-- <option value=''>-----SELECT YOUR COURSE-----</option> -->
+                             <label >Course</label>
+                            
                             <?php 
                                 include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
                                 $result=mysqli_query($con,'SELECT * FROM `user_course`'); 
-                                // while($row=mysqli_fetch_assoc($result)) { 
-                                //     echo "<option v>".$row['course_name']."</option>"; 
-                                // } 
+                                
                             ?> 
-                                <!-- </select>  -->
-            </div> 
+                                
+                        </div> 
 
 
 
                         <div class="row clearfix">
-                                <div class="col-sm-6">
-                                    <select class="form-control show-tick">
-                                        <option value="">-- Please select --</option>
+                                <div class="col-sm-12 form-group">
+                                    <select class="form-control show-tick  ms ">
+                                        <option >-- Please select --</option>
                                         <?php
                                         while($row=mysqli_fetch_assoc($result)) { 
-                                            echo "<option v>".$row['course_name']."</option>"; 
+                                            echo "<option  value=<?  echo $row['course_id'];?>>".$row['course_name']."</option>"; 
                                         } 
                                         ?>
                                     </select>
@@ -255,7 +252,10 @@
 <script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 
-<script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+<script src="http://classlink.com/assets/bundles/basic-form-elements.js"></script>
+
+
 </body>
 
 

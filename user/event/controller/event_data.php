@@ -11,7 +11,7 @@ $qry="INSERT INTO `event`(`title`, `description`, `image`, `status`)
 VALUES ('$standard_id','$title','$discription','$imagename','N') ";
  $run=mysqli_query($con,$qry);
 
-header('LOCATION:http://classlink.com/user/event/controller/show_event.php');
+header('LOCATION:http://classlink.com/user/event/view/show_event.php');
 
 
 ?>

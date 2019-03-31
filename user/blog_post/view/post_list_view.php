@@ -218,15 +218,7 @@
 
                         
                     </div>
-                    <div class="card">
-                        <ul class="pagination pagination-primary">
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
-                            <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
-                        </ul>
-                    </div>
+                   
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="card">

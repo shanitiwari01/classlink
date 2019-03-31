@@ -17,6 +17,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
 <link rel="stylesheet" href="http://classlink.com/assets/bootstrap/bootstrap.min.css">
 <!-- Custom Css -->
 <link rel="stylesheet" href="http://classlink.com/assets/css/style.min.css">
+<link rel="stylesheet" href="http://classlink.com/assets/css/bootstrap-select.css">
 </head>
 <body class="theme-blush">
 
