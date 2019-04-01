@@ -9,7 +9,7 @@ $result=mysqli_query($con,$qry);
 if (mysqli_num_rows($result) > 0) {
 
     $row=mysqli_fetch_assoc($result);
-    $_SESSION["user_id"] = $row;
+    $_SESSION["admin_user"] = $row;
 
     header('LOCATION:http://classlink.com/admin/view/dashboard.php');
 }else{
