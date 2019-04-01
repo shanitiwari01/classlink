@@ -20,6 +20,6 @@ if (mysqli_num_rows($result) > 0) {
 
     header('LOCATION:http://classlink.com/user/view/deshboard.php');
 }
-
+header('LOCATION:http://classlink.com/user/');
 
 ?>
