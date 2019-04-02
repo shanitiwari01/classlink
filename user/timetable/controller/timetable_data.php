@@ -10,6 +10,7 @@ move_uploaded_file($tempname,"../../../assets/images/timetable/$imagename");
 $qry="INSERT INTO `timetable`( `standard_id`, `title`, `description`, `image`, `status`) 
 VALUES ('$user_course','$title','$disc','$imagename','N') ";
  $run=mysqli_query($con,$qry);
+ $_SESSION['standard_id']=$run['standard_id'];
 
 header('LOCATION:http://classlink.com/user/timetable/view/show_timetable.php');
 

@@ -62,11 +62,11 @@
 
                         <div class="row clearfix">
                                 <div class="col-sm-12 form-group">
-                                    <select class="form-control show-tick  ms ">
-                                        <option >-- Please select --</option>
+                                    <select class="form-control show-tick  ms" name="course">
+                                        <option >-- Please select Course --</option>
                                         <?php
                                         while($row=mysqli_fetch_assoc($result)) { 
-                                            echo "<option  value=<?  echo $row['course_id'];?>>".$row['course_name']."</option>"; 
+                                            echo "<option  value='$row[course_id]'>".$row['course_name']."</option>"; 
                                         } 
                                         ?>
                                     </select>

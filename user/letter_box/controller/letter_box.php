@@ -9,6 +9,6 @@ $qry=" INSERT INTO `letter`( `user_id`, `subject`, `description`, `date`, `statu
  VALUES ('$user_id','$title','$letter_discription','$date','N') ";
 $run=mysqli_query($con,$qry);
 
-header('LOCATION:http://classlink.com/user/Letter_box/view/show_letter.php');
+header('LOCATION:http://classlink.com/user/Letter_box/view/letter.php');
 
 ?>

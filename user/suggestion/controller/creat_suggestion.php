@@ -7,7 +7,7 @@ $discription=$_POST['suggestion_discription'];
 $qry=" INSERT INTO `suggestion`( `user_id`, `title`, `comment`,`status`) VALUES ('$user_id','$title','$discription','P') ";
 $run=mysqli_query($con,$qry);
 if ($run) {
-    header('LOCATION:http://classlink.com/user/suggestion/view/show_suggestion.php');
+    header('LOCATION:http://classlink.com/user/suggestion/view/suggestion.php');
 }
 
 

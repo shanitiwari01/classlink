@@ -36,10 +36,7 @@ $result = mysqli_fetch_array($run);
             <div class="row">
                 <div class="col-lg-7 col-md-6 col-sm-12">
                     <h2>Blog Detail</h2>
-<<<<<<< HEAD
                     
-=======
->>>>>>> a74dd347f5e3f4652005f82649afdd70afab7d5f
                     <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12">                
