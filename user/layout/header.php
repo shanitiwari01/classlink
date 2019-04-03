@@ -25,7 +25,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
 <aside id="leftsidebar" class="sidebar">
     <div class="navbar-brand">
         <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
-        <a href="index-2.html"><img src="http://classlink.com/assets/images/logo.png" width="85" alt="ClassLINK"><span class="m-l-10">ClassLINK</span></a>
+        <a href="#"><img src="http://classlink.com/assets/images/logo.png" width="85" alt="ClassLINK"></a>
     </div>
     <div class="menu">
         <ul class="list">
@@ -69,12 +69,6 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
            <a href="http://classlink.com/user/add/view/show_techers.php"><i class=""></i><i class="zmdi zmdi-account"></i><span>Teacher</span></a>
            
            <a href="http://classlink.com/user/blog_post/view/post_list_view.php"><i class="zmdi zmdi-blogger"></i><span>Blogger</span></a>
-           
-           
-           
-           
-           
-            
             
             
         </ul>
