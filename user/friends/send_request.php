@@ -28,7 +28,10 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
                         <div class="col-lg-4 col-md-12">
                             <div class="card mcard_3">
                                 <div class="body">
-                                    <a href="#"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['recevier_user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
+                                    <a href="#"><img style="height: 90px;width: 90px;" 
+                                    src="http://classlink.com/assets/images/user_signup/
+                                    <?php echo $data['recevier_user_image']; ?>" 
+                                    class="rounded-circle shadow " alt="profile-image"></a>
                                     <h4 class="m-t-10"><?php echo $data['recevier_user_name']; ?></h4>                            
                                     <div class="row">
                                         
