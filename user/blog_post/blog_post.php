@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" href="http://classlink.com/assets/plugin/summernote.css"/>
     <link rel="stylesheet" href="http://classlink.com/assets/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="http://classlink.com/assets/css/dropify.min.css" />
 </head>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
@@ -50,7 +51,7 @@
                         <textarea name="post_discription" class="form-control" placeholder="Enter Blog Discription . . ."></textarea>
                         </div>
                             <div>
-                            <input type="file"  name="picture" class="formcontrol">
+                            <input type="file"  name="picture" class="dropify">
                             </div>
                             <button type="button" class="btn btn-info waves-effect m-t-20" onClick="post();">POST</button>
                         </div>
@@ -73,7 +74,15 @@
 <script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 
-<script src="http://classlink.com/assets/bundles/dropzone.js"></script> <!-- Dropzone Plugin Js --> 
+<script src="http://classlink.com/assets/bundles/dropzone.js"></script> <!-- Dropzone Plugin Js -->
+
+
+
+
+<script src="http://classlink.com/assets/bundles/dropify.min.js"></script> <!-- Dropzone Plugin Js -->
+<script src="http://classlink.com/assets/bundles/dropify.js"></script> <!-- Dropzone Plugin Js -->
+
+
 
 <script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
 <script src="http://classlink.com/assets/bundles/summernote.js"></script>

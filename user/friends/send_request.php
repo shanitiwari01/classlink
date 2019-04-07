@@ -30,23 +30,23 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
                                 <div class="body">
                                     <a href="#"><img style="height: 90px;width: 90px;" 
                                     src="http://classlink.com/assets/images/user_signup/
-                                    <?php echo $data['recevier_user_image']; ?>" 
+                                    <?php echo $data['receiver_user_image']; ?>" 
                                     class="rounded-circle shadow " alt="profile-image"></a>
-                                    <h4 class="m-t-10"><?php echo $data['recevier_user_name']; ?></h4>                            
+                                    <h4 class="m-t-10"><?php echo $data['receiver_user_name']; ?></h4>                            
                                     <div class="row">
                                         
                                         <div class="m-auto">
                                         
                                        <?php  
                                        
-                                       if ($data['recevier_user_role_id']==1) {
+                                       if ($data['receiver_user_role_id']==1) {
                                            echo "Principle";
                                        }
-                                       elseif($data['recevier_user_role_id']==2)
+                                       elseif($data['receiver_user_role_id']==2)
                                        {
                                            echo "Teacher";
                                        }
-                                       elseif($data['recevier_user_role_id']==3)
+                                       elseif($data['receiver_user_role_id']==3)
                                        {
                                            echo "Student";
                                        }
