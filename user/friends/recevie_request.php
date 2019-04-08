@@ -28,7 +28,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
                         <div class="col-lg-4 col-md-12">
                             <div class="card mcard_3">
                                 <div class="body">
-                                    <a href="#"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['sender_user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
+                                    <a href="http://classlink.com/user/user_profile/view/user_info.php?id=<?php echo $data['user_id']; ?>"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['sender_user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
                                     <h4 class="m-t-10"><?php echo $data['sender_user_name']; ?></h4>                            
                                     <div class="row">
                                         
@@ -52,9 +52,18 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
                                        ?>
                
                                                                           
-                                        </div>                           
+                                        </div> 
+                                                                
+                                    </div>
+                                    <br>
+                                    <div class="Right ">
+                                    
+                                        <button  class="btn btn-success request-accepted"  id="user<?php echo $data['user_id'];?>" data-id="<?php echo $data['user_id'];?>">ACCEPT</button>
+                                       
+                                        <button  class="btn btn-danger request-rejected"  id="reject<?php echo $data['user_id'];?>" data-id="<?php echo $data['user_id'];?>">REJECT</button> 
                                     </div>
                                 </div>
+                                
                             </div>                   
                         </div>
                    
@@ -77,3 +86,22 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
 <script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <!-- <script src="http://classlink.com/assets/bundles/jquery-3.3.1.min.js"></script> -->
 <script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+
+
+
+<script>
+$('.request-accepted').click(function(){
+    $id = $(this).data('id');
+    $.ajax({
+        type:"POST",
+        url:"accept_request.php",
+        dataType:'json',
+        data:{
+            id:$id
+        },
+        success: function(data) {
+         $('#user'+$id).val('ACCEPTED');
+        }
+    })
+})
+</script> 
