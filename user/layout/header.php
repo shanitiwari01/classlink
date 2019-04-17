@@ -75,6 +75,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
                 <ul class="ml-menu">
                     <li><a href="" class=" waves-effect waves-block">Connected</a></li>
                     <li><a href="" class=" waves-effect waves-block">Not Connected</a></li>
+                    <li><a href="" class=" waves-effect waves-block">Request</a></li>
                 </ul>
             </li>
         </ul>
