@@ -49,7 +49,7 @@
                     <div class="card">
                         <div class="body">
                         <div class="form-group">
-                        <textarea name="announce_discription" class="form-control" placeholder="Enter Blog Discription . . ."></textarea>
+                        <textarea name="description" class="form-control" placeholder="Enter Blog Discription . . ."></textarea>
                         </div>
                             <div>
                             <input type="file"  name="picture" class="dropify">
