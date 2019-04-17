@@ -2,6 +2,8 @@
 <head>
     <link rel="stylesheet" href="http://classlink.com/assets/plugin/summernote.css"/>
     <link rel="stylesheet" href="http://classlink.com/assets/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="http://classlink.com/assets/css/dropify.min.css" />
+
 </head>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
@@ -23,8 +25,8 @@
         <div class="block-header">
             <div class="row">
                 <div class="col-lg-7 col-md-6 col-sm-12">
-                    <h2>Blog Post</h2>
-                   
+                    <h2>Announcement</h2>
+                    
                     <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12">                
@@ -34,7 +36,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8 col-md-10 col-sm-12 m-auto">
                     <form action="http://classlink.com/user/Announcement/controller/announce.php" method="post" id="postdata" enctype="multipart/form-data">
                     <div class="card">
                         <div class="body">
@@ -50,7 +52,7 @@
                         <textarea name="announce_discription" class="form-control" placeholder="Enter Blog Discription . . ."></textarea>
                         </div>
                             <div>
-                            <input type="file"  name="picture">
+                            <input type="file"  name="picture" class="dropify">
                             </div>
                             <button type="button" class="btn btn-info waves-effect m-t-20" onClick="post();">ANNOUNCEMENT</button>
                         </div>
@@ -73,7 +75,15 @@
 <script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 
-<script src="http://classlink.com/assets/bundles/dropzone.js"></script> <!-- Dropzone Plugin Js --> 
+<script src="http://classlink.com/assets/bundles/dropzone.js"></script> <!-- Dropzone Plugin Js -->
+
+
+
+
+<script src="http://classlink.com/assets/bundles/dropify.min.js"></script> <!-- Dropzone Plugin Js -->
+<script src="http://classlink.com/assets/bundles/dropify.js"></script> <!-- Dropzone Plugin Js -->
+
+
 
 <script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
 <script src="http://classlink.com/assets/bundles/summernote.js"></script>

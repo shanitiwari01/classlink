@@ -49,8 +49,38 @@
 
                            <div class="form-group">
                            <label for="course">Course</label>
-                           <input type="text" class="form-control" name="course" required>
+
+                           <?php 
+                                include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
+                                $result=mysqli_query($con,'SELECT * FROM `user_course`'); 
+                                
+                            ?> 
+                                
+                         
                            </div>
+
+                           <div class="row clearfix">
+                                <div class="col-sm-12 form-group">
+                                    <select class="form-control show-tick  ms" name="course">
+                                        <option >-- Please select Course--</option>
+                                        <?php
+                                        while($row=mysqli_fetch_assoc($result)) { 
+                                            echo "<option  value='$row[course_id]'>".$row['course_name']."</option>"; 
+                                        } 
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
 
                            <div class="form-group">
                            <button type="submit" class="btn btn-danger" onClick="addteacher();">Add Teacher</button>
