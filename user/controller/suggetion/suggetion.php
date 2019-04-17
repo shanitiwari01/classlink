@@ -1,7 +1,5 @@
-
-    
-
-<?php include $_SERVER['DOCUMENT_ROOT'].'/user/view/layout/header.php'; ?>
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -13,7 +11,7 @@
 <!-- Overlay For Sidebars -->
 <div class="overlay"></div>
 
-<?php include $_SERVER['DOCUMENT_ROOT'].'/user/view/layout/footer.php';  ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/footer.php';  ?>
 
 <!-- Right Sidebar -->
 <aside id="rightsidebar" class="right-sidebar">
@@ -180,61 +178,26 @@
                         {
 
                         while ($data=mysqli_fetch_assoc($result)) {
-                            
-                        
+                            if($data['user_id'] !== $_SESSION['user_id']){
                         ?>
 
-            <div class="col-lg-4 col-md-12">
-                        <div class="card mcard_3">
-                            <div class="body">
-                                <a href="profile.html"><img src="http://classlink.com/assets/images/user_signup/<?php echo $data['user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
-                                <h4 class="m-t-10"><?php echo $data['user_name']; ?></h4>                            
-                                <div class="row">
-                                    <div class="col-12">
-                                        <ul class="social-links list-unstyled">
-                                            <li><a title="facebook" href="javascript:void(0);"><i class="zmdi zmdi-facebook"></i></a></li>
-                                            <li><a title="twitter" href="javascript:void(0);"><i class="zmdi zmdi-twitter"></i></a></li>
-                                            <li><a title="instagram" href="javascript:void(0);"><i class="zmdi zmdi-instagram"></i></a></li>
-                                        </ul>
-                                        <p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card mcard_3">
+                                <div class="body">
+                                    <a href="#"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
+                                    <h4 class="m-t-10"><?php echo $data['user_name']; ?></h4>                            
+                                    <div class="row">
+                                        
+                                        <div class="m-auto">
+                                        <input type="button" id="user<?php echo $data['user_id'];?>" class="btn btn-primary friend-request" data-id="<?php echo $data['user_id'];?>" value="CONNECT" >
+                                        
+                                        </div>                           
                                     </div>
-                                    <div class="col-4">                                    
-                                        <small>Following</small>
-                                        <h5>852</h5>
-                                    </div>
-                                    <div class="col-4">                                    
-                                        <small>Followers</small>
-                                        <h5>13k</h5>
-                                    </div>
-                                    <div class="col-4">                                    
-                                        <small>Post</small>
-                                        <h5>234</h5>
-                                    </div> 
-                                    <div class="m-auto">
-                                    <button type="submit" class="btn btn-primary at_friend" data-id="<?php echo $data['user_id'];?>" >CONNECT</button>
-                                    <script>
-                                        $('button').click(function(){
-                                            $(this).data('id');
-                                            $id = $(this).data('id');
-                                            $.ajax({
-                                                type:"POST",
-                                                url:"at_friend.php",
-                                                dataType:'json',
-                                                data:{
-                                                    id:$id;
-                                                }
-                                            })
-                                        })
-                                    </script> 
-                                    </div>                           
                                 </div>
-                            </div>
-                        </div>                   
-                    </div>
+                            </div>                   
+                        </div>
                    
-<?php
-                        }}
-?> 
+<?php   }}} ?> 
 
              
 </div> 
@@ -245,8 +208,26 @@
 
 </section>
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 <!-- Jquery Core Js --> 
 <script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
-<script src="http://classlink.com/assets/bundles/jquery-3.3.1.min.js"></script>
+<!-- <script src="http://classlink.com/assets/bundles/jquery-3.3.1.min.js"></script> -->
 <script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script>
+$('.friend-request').click(function(){
+    $id = $(this).data('id');
+    $.ajax({
+        type:"POST",
+        url:"at_friend.php",
+        dataType:'json',
+        data:{
+            id:$id
+        },
+        success: function(data) {
+         $('#user'+$id).val('CONNECTED');
+        }
+    })
+})
+</script> 
