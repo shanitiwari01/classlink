@@ -61,16 +61,37 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
                         ?></small>
                     </div>
                 </div>
+           <?php
+            include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
+            $user_id= $_SESSION['user']['user_id'];
+            $qry=" SELECT * FROM `m_user` WHERE `user_id`='$user_id' ";
+            $result=mysqli_query($con,$qry);
+            $run = mysqli_fetch_array($result)
+
+           ?>
+           <?php 
+           if ($run['user_role_id']==3) {
+               ?>
+                <a href="http://classlink.com/user/blog_post/view/post_list_view.php"><i class="zmdi zmdi-blogger"></i><span>Blogger</span></a>
             
+             <?php
+           }
+           else{
+               ?>
+            <a href="http://classlink.com/user/view/deshboard.php"><i class="zmdi zmdi-collection-folder-image"></i><span>Course</span></a>
+           
+            <a href="http://classlink.com/user/add/view/show_student.php"><i class="zmdi zmdi-male-alt"></i><span>Student</span></a>
             
-           <a href="http://classlink.com/user/view/deshboard.php"><i class="zmdi zmdi-collection-folder-image"></i><span>Course</span></a>
+            <a href="http://classlink.com/user/add/view/show_techers.php"><i class=""></i><i class="zmdi zmdi-account"></i><span>Teacher</span></a>
+            <a href="http://classlink.com/user/blog_post/view/post_list_view.php"><i class="zmdi zmdi-blogger"></i><span>Blogger</span></a>
+
+<?php
+           }
+           ?>
            
-           <a href="http://classlink.com/user/add/view/show_student.php"><i class="zmdi zmdi-male-alt"></i><span>Student</span></a>
            
-           <a href="http://classlink.com/user/add/view/show_techers.php"><i class=""></i><i class="zmdi zmdi-account"></i><span>Teacher</span></a>
-           
-           <a href="http://classlink.com/user/blog_post/view/post_list_view.php"><i class="zmdi zmdi-blogger"></i><span>Blogger</span></a>
-            
+
+          
             
         </ul>
     </div>

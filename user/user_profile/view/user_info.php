@@ -21,7 +21,7 @@
  
  include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
  
- $user_id= $_SESSION['user']['user_id'];
+ $user_id=$_GET['id'];
  $qry="SELECT * FROM `m_user` WHERE `user_id`='$user_id'";  
  $run=mysqli_query($con,$qry);
  $result=mysqli_fetch_array($run);
@@ -71,11 +71,7 @@
                             </div>
                             </div>
 
-                            <div class="row ">
-                            <div class="md-4 m-auto">
-                            <a href="http://classlink.com/user/user_profile/view/user_signup_profile.php" class="btn btn-primary">Edit Profile</a>
-                            </div>
-                            </div>
+                            
                         </div>
                     </div>
                                       

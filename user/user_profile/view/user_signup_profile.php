@@ -75,11 +75,11 @@
                                     </div>
                                 <div class="form-group">
                                     <div class="radio inlineblock m-r-20">
-                                        <input type="radio" name="gender" id="male" class="with-gap " value="Male">
+                                        <input type="radio" name="gender" id="male" class="with-gap " value="Male"  <?php if ($result['user_gender']== 'Male') {  echo "checked";  }  ?>>
                                         <label for="male">Male</label>
                                     </div>                                
                                     <div class="radio inlineblock">
-                                        <input type="radio" name="gender" id="Female" class="with-gap" value="Female" checked>
+                                        <input type="radio" name="gender" id="Female" class="with-gap" value="Female" <?php if ($result['user_gender']== 'Female') {  echo "checked";  }  ?>>
                                         <label for="Female">Female</label>
                                     </div>
                                 </div>
@@ -89,7 +89,7 @@
                             </div>
                                 
                                 <div class="form-group form-float">
-                                    <textarea name="address" cols="30" rows="5" placeholder="Address..." class="form-control no-resize"  required></textarea>
+                                    <textarea name="address" cols="30" rows="5" placeholder="Address..." class="form-control no-resize" value="<?php echo $result['user_address'];?>" required><?php echo $result['user_address'];?></textarea>
                                 </div>
                                
 
