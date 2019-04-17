@@ -90,7 +90,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
            ?>
            
            
-           <a href="http://classlink.com/user/blog_post/view/post_list_view.php"><i class="zmdi zmdi-blogger"></i><span>Blogger</span></a>
+           
             
            <li> <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block"><i class="zmdi zmdi-assignment"></i><span>Friends</span></a>
                 <ul class="ml-menu">
