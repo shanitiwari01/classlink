@@ -62,7 +62,6 @@
                                 </div>
                                 <h5><?php  echo $result['title']; ?></a></h5>
                                 <p><?php echo $result['description']; ?></p>
-                                <a href="" class="btn btn-info">ANNOUNCEMENT</a>
                             </div>
                         </div>
                        <?php

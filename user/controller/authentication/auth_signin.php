@@ -5,6 +5,7 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 $qry="SELECT * FROM `m_user` WHERE `user_email` = '$email' and `user_password` = '$password'";
 $result=mysqli_query($con,$qry);
+
 if (mysqli_num_rows($result) > 0) {
 
     $row =mysqli_fetch_assoc($result);
@@ -19,6 +20,6 @@ if (mysqli_num_rows($result) > 0) {
 
     header('LOCATION:http://classlink.com/user/view/deshboard.php');
 }
-// header('LOCATION:http://classlink.com/user/');
+header('LOCATION:http://classlink.com/user/');
 
 ?>
