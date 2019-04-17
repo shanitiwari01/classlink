@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 29, 2019 at 11:14 AM
+-- Generation Time: Apr 06, 2019 at 03:59 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.20
 
@@ -36,6 +36,14 @@ CREATE TABLE `community` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   `status` enum('Y','N') NOT NULL DEFAULT 'Y'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `community`
+--
+
+INSERT INTO `community` (`community_id`, `user_id`, `title`, `description`, `image`, `created_at`, `updated_at`, `status`) VALUES
+(1, 1, 'asdfdsafs', '', '7.jpg', '2019-03-29 13:33:08', '2019-04-02 02:36:13', 'Y'),
+(2, 1, 'asdfdsadfadafs', '', '8.jpg', '2019-03-29 13:42:15', '2019-04-02 02:36:27', 'Y');
 
 -- --------------------------------------------------------
 
@@ -115,7 +123,7 @@ CREATE TABLE `event` (
   `user_id` int(11) NOT NULL,
   `title` varchar(64) NOT NULL,
   `description` varchar(256) NOT NULL,
-  `image` varchar(64) NOT NULL,
+  `image` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   `status` enum('Y','N') NOT NULL DEFAULT 'Y'
@@ -160,6 +168,15 @@ CREATE TABLE `letter` (
   `status` enum('Y','N') NOT NULL DEFAULT 'Y'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `letter`
+--
+
+INSERT INTO `letter` (`letter_id`, `user_id`, `subject`, `description`, `date`, `created_at`, `updated_at`, `status`) VALUES
+(1, 1, 'afdadfasd', 'adsfsdfdgfsgstgssdfg', '2019-01-01', '2019-03-29 12:17:37', '0000-00-00 00:00:00', 'N'),
+(2, 2, 'asdfdsadfadafs', 'shshgs', '1562-02-15', '2019-04-02 02:59:19', '0000-00-00 00:00:00', 'N'),
+(3, 2, 'asdfdsadfadafs', 'shshgs', '1562-02-15', '2019-04-02 03:02:57', '0000-00-00 00:00:00', 'N');
+
 -- --------------------------------------------------------
 
 --
@@ -189,6 +206,10 @@ CREATE TABLE `m_user` (
   `user_email` varchar(64) NOT NULL,
   `user_course` varchar(100) NOT NULL,
   `user_password` varchar(64) NOT NULL,
+  `user_contact` int(12) NOT NULL,
+  `user_gender` varchar(50) NOT NULL,
+  `user_address` varchar(100) NOT NULL,
+  `user_dob` varchar(50) NOT NULL,
   `user_image` text NOT NULL,
   `user_role_id` int(11) NOT NULL,
   `user_key` varchar(64) NOT NULL,
@@ -201,49 +222,53 @@ CREATE TABLE `m_user` (
 -- Dumping data for table `m_user`
 --
 
-INSERT INTO `m_user` (`user_id`, `collage_id`, `user_name`, `user_email`, `user_course`, `user_password`, `user_image`, `user_role_id`, `user_key`, `created_at`, `updated_at`, `status`) VALUES
-(1, '28', 'shani tiwari', 'tiwarishani01@gmail.com', '6.jpg', '1234', '', 1, '23213', '2019-01-23 10:22:31', '2019-03-29 01:15:07', 'Y'),
-(2, '', '', '', '', '', '', 0, '', '2019-02-19 00:36:49', '0000-00-00 00:00:00', 'Y'),
-(3, '28', 'Nisha', 'Niash@gfg.com', 'MBA', 'asdadsads', 'avatar1.jpg', 0, '', '2019-02-21 05:51:33', '2019-03-04 02:17:58', 'Y'),
-(4, '29', 'azadsdf', 'adfa@gfg.com', 'MBA', '', 'avatar4.jpg', 0, '', '2019-02-21 06:02:27', '2019-03-06 02:50:07', 'Y'),
-(5, '30', 'azad', 'ad@gfg.com', 'MBA', 'asdfgdg', 'avatar2.jpg', 0, '', '2019-02-21 06:02:30', '2019-03-04 02:18:08', 'Y'),
-(6, '31', 'ghj', 'test@gmail.com', 'M.Sci', 'sgfhsgh', 'avatar3.jpg', 0, '', '2019-02-21 06:02:42', '2019-03-04 01:35:05', 'Y'),
-(7, '88', 'jfjghv', 'teskhgvfvt@gmail.com', 'MBA', 'hgfyhfcytfc', 'avatar4.jpg', 0, '', '2019-02-21 06:02:58', '2019-03-06 02:51:01', 'Y'),
-(8, '33', 'ghj', 'test@gmail.com', 'MBA', '', 'avatar2.jpg', 0, '', '2019-02-21 06:08:33', '2019-03-06 02:51:49', 'Y'),
-(9, '34', '', '', '', '', '', 0, '', '2019-02-21 06:09:11', '0000-00-00 00:00:00', 'Y'),
-(10, '35gshhg', 'Ankshgss', 'vijaysfgh@gmail.com', 'MBA', 'adsasd', 'avatar4.jpg', 0, '', '2019-02-21 06:09:59', '2019-03-04 02:18:44', 'Y'),
-(11, '36', 'ghj', 'test@gmail.com', '', '', '', 0, '', '2019-02-21 06:11:24', '0000-00-00 00:00:00', 'Y'),
-(12, '37', 'shiv', 'test@gmail.com', 'MBA', 'adsadfds', 'avatar5.jpg', 0, '', '2019-02-21 06:12:32', '2019-03-04 02:18:54', 'Y'),
-(13, '38', 'ghj', 'test@gmail.com', 'MBA', '1452364521', 'avatar6.jpg', 0, '', '2019-02-21 06:15:23', '2019-03-04 02:19:01', 'Y'),
-(14, '39', 'vijay', 'vijayemail@gmail.com', 'MBA', 'avsdggf', 'avatar3.jpg', 0, '', '2019-02-21 06:15:47', '2019-03-06 02:52:07', 'Y'),
-(15, '40', 'ghj', 'test@gmail.com', 'MBA', 'asdfhjfbsadkfbsd', 'avatar5.jpg', 0, '', '2019-02-21 06:17:08', '2019-03-06 02:52:16', 'Y'),
-(16, '41', 'ghj', 'test@gmail.com', 'MBA', 'asdfsdsd', 'avatar6.jpg', 0, '', '2019-02-21 06:17:09', '2019-03-06 02:52:23', 'Y'),
-(17, '42', 'ghj', 'test@gmail.com', '', '', '', 0, '', '2019-02-21 06:17:10', '0000-00-00 00:00:00', 'Y'),
-(18, '43', 'ghj', 'test@gmail.com', '', '', '', 0, '', '2019-02-21 06:17:10', '0000-00-00 00:00:00', 'Y'),
-(19, '44', 'azadsdf', 'adfa@gfg.com', '', '', '', 0, '', '2019-02-21 06:19:49', '0000-00-00 00:00:00', 'Y'),
-(20, '45', 'Aaad', 'azzadt@gmail.com', 'M.Sci', 'azzad', 'avatar4.jpg', 0, '', '2019-02-21 06:21:12', '2019-03-06 02:49:25', 'Y'),
-(21, '46', 'qqqqqqqqq', 'q@sss.com', '', '', '', 0, '', '2019-02-21 06:26:13', '0000-00-00 00:00:00', 'Y'),
-(22, '47', 'ghj', 'test@gmail.com', 'MBA', 'asdfdsfsda', 'avatar4.jpg', 0, '', '2019-02-22 06:13:59', '2019-03-06 05:02:13', 'Y'),
-(23, '48', 'ghj', 'test@gmail.com', 'MBA', 'gadsg', 'Snapchat-286089111.jpg', 0, '', '2019-02-22 06:15:12', '2019-03-17 06:00:28', 'Y'),
-(24, '49', 'ghj', 'test@gmail.com', '', '', '', 0, '', '2019-02-22 06:15:17', '0000-00-00 00:00:00', 'Y'),
-(25, '50', 'ghj', 'test@gmail.com', 'MBA', 'khfgfddgjh', 'avatar5.jpg', 2, '', '2019-02-22 06:15:25', '2010-03-19 00:05:07', 'Y'),
-(26, '51', '', '', '', '', '', 0, '', '2019-02-23 00:27:35', '0000-00-00 00:00:00', 'Y'),
-(27, '', 'asrfga', 'adga@sgh.cssad', 'dgsgdf', '', '', 0, '', '2010-03-19 00:06:07', '0000-00-00 00:00:00', 'Y'),
-(28, '', '$name', '$email', '$course', '', '', 2, '', '2010-03-19 00:13:51', '0000-00-00 00:00:00', 'Y'),
-(29, '', 'sgsdffd', 'test@gmail.com', 'agfaadfgadfgfdrg', '', '', 2, '', '2010-03-19 00:14:55', '0000-00-00 00:00:00', 'Y'),
-(30, '28', 'sgsdffd', 'test@gmail.com', 'agfaadfgadfgfdrg', '', '', 2, '', '2010-03-19 00:22:43', '0000-00-00 00:00:00', 'Y'),
-(31, '28', 'sgsdffd', 'test@gmail.com', 'agfaadfgadfgfdrg', '', '', 2, '', '2010-03-19 00:23:10', '0000-00-00 00:00:00', 'Y'),
-(32, 'Array', 'Ankit', 'tiwarishani01@gmail.com', 'adfga', '', '', 2, '', '2010-03-19 02:54:26', '0000-00-00 00:00:00', 'Y'),
-(33, 'Array', 'vijay', 'ad@gfg.com', 'ADSFADSF', '', '', 3, '', '2010-03-19 03:07:46', '0000-00-00 00:00:00', 'Y'),
-(34, 'Array', 'vijayGHFK', 'aYTHFKd@gfg.com', 'ADhgfkjSFADSF', '', '', 3, '', '2010-03-19 03:08:42', '0000-00-00 00:00:00', 'Y'),
-(35, 'Array', '', '', '', '', '', 3, '', '2010-03-19 09:26:31', '0000-00-00 00:00:00', 'Y'),
-(36, 'Array', 'Ankit Kanaujiya', 'tiwarishani01@gmail.com', 'agfaadfgadfgfdrg', '', '', 3, '', '2010-03-19 09:26:49', '0000-00-00 00:00:00', 'Y'),
-(37, 'Array', 'Ankit Kanaujiya', 'test@gmail.com', 'ADhgfkjSFADSF', '', '', 3, '', '2019-03-23 15:09:13', '0000-00-00 00:00:00', 'Y'),
-(38, 'Array', 'Ankit Kanaujiya', 'test@gmail.com', 'agfaadfgadfgfdrg', '', '', 2, '', '2019-03-23 15:14:38', '0000-00-00 00:00:00', 'Y'),
-(39, 'Array', 'Ankit Kanaujiya', 'kanaujiya1999@gmail.com', 'agfaadfgadfgfdrg', '', '', 3, '', '2019-03-23 15:15:10', '0000-00-00 00:00:00', 'Y'),
-(40, '28', 'Ankit Kanaujiya', 'tiwarishani01@gmail.com', 'agfaadfgadfgfdrg', '', '', 3, '', '2019-03-29 08:34:50', '0000-00-00 00:00:00', 'Y'),
-(41, '28', 'Ankit Kanaujiya', 'tiwarishani01@gmail.com', 'agfaadfgadfgfdrg', '', '', 3, '', '2019-03-29 08:36:40', '0000-00-00 00:00:00', 'Y'),
-(42, '28', 'vijay', 'vijay@gmail.com', 'ADhgfkjSFADSF', '', '', 2, '', '2019-03-29 08:37:37', '0000-00-00 00:00:00', 'Y');
+INSERT INTO `m_user` (`user_id`, `collage_id`, `user_name`, `user_email`, `user_course`, `user_password`, `user_contact`, `user_gender`, `user_address`, `user_dob`, `user_image`, `user_role_id`, `user_key`, `created_at`, `updated_at`, `status`) VALUES
+(1, '28', 'shani tiwari', 'tiwarishani01@gmail.com', '6.jpg', '1234', 78946465, 'Male', 'adfadsfggggggggggggds', '14/20/1999', '6.jpg', 1, '23213', '2019-01-23 10:22:31', '2019-04-01 18:25:31', 'Y'),
+(2, '', 'Ankit Kanaujiya', 'ankit@gmail.com', '7', '1432', 798988457, 'Male', '104/A,shiva bhayander(E)', '14/01/2024', '6.jpg', 2, '', '2019-02-19 00:36:49', '2019-04-02 00:14:10', 'Y'),
+(3, '28', 'Nisha', 'Niash@gfg.com', 'MBA', '1236', 0, 'Female', '201/B,shiddhi shai', '24/03/1994', 'avatar1.jpg', 3, '', '2019-02-21 05:51:33', '2019-04-02 00:10:18', 'Y'),
+(4, '29', 'azadsdf', 'adfa@gfg.com', 'MBA', '', 0, '', '', '', 'avatar4.jpg', 0, '', '2019-02-21 06:02:27', '2019-03-06 02:50:07', 'Y'),
+(5, '30', 'azad', 'ad@gfg.com', 'MBA', 'asdfgdg', 0, '', '', '', 'avatar2.jpg', 0, '', '2019-02-21 06:02:30', '2019-03-04 02:18:08', 'Y'),
+(6, '31', 'ghj', 'test@gmail.com', 'M.Sci', 'sgfhsgh', 0, '', '', '', 'avatar3.jpg', 0, '', '2019-02-21 06:02:42', '2019-03-04 01:35:05', 'Y'),
+(7, '88', 'jfjghv', 'teskhgvfvt@gmail.com', 'MBA', 'hgfyhfcytfc', 0, '', '', '', 'avatar4.jpg', 0, '', '2019-02-21 06:02:58', '2019-03-06 02:51:01', 'Y'),
+(8, '33', 'ghj', 'test@gmail.com', 'MBA', '', 0, '', '', '', 'avatar2.jpg', 0, '', '2019-02-21 06:08:33', '2019-03-06 02:51:49', 'Y'),
+(9, '34', '', '', '', '', 0, '', '', '', '', 0, '', '2019-02-21 06:09:11', '0000-00-00 00:00:00', 'Y'),
+(10, '35gshhg', 'Ankshgss', 'vijaysfgh@gmail.com', 'MBA', 'adsasd', 0, '', '', '', 'avatar4.jpg', 0, '', '2019-02-21 06:09:59', '2019-03-04 02:18:44', 'Y'),
+(11, '36', 'ghj', 'test@gmail.com', '', '', 0, '', '', '', '', 0, '', '2019-02-21 06:11:24', '0000-00-00 00:00:00', 'Y'),
+(12, '37', 'shiv', 'test@gmail.com', 'MBA', 'adsadfds', 0, '', '', '', 'avatar5.jpg', 0, '', '2019-02-21 06:12:32', '2019-03-04 02:18:54', 'Y'),
+(13, '38', 'ghj', 'test@gmail.com', 'MBA', '1452364521', 0, '', '', '', 'avatar6.jpg', 0, '', '2019-02-21 06:15:23', '2019-03-04 02:19:01', 'Y'),
+(14, '39', 'vijay', 'vijayemail@gmail.com', 'MBA', 'avsdggf', 0, '', '', '', 'avatar3.jpg', 0, '', '2019-02-21 06:15:47', '2019-03-06 02:52:07', 'Y'),
+(15, '40', 'ghj', 'test@gmail.com', 'MBA', 'asdfhjfbsadkfbsd', 0, '', '', '', 'avatar5.jpg', 0, '', '2019-02-21 06:17:08', '2019-03-06 02:52:16', 'Y'),
+(16, '41', 'ghj', 'test@gmail.com', 'MBA', 'asdfsdsd', 0, '', '', '', 'avatar6.jpg', 0, '', '2019-02-21 06:17:09', '2019-03-06 02:52:23', 'Y'),
+(17, '42', 'ghj', 'test@gmail.com', '', '', 0, '', '', '', '', 0, '', '2019-02-21 06:17:10', '0000-00-00 00:00:00', 'Y'),
+(18, '43', 'ghj', 'test@gmail.com', '', '', 0, '', '', '', '', 0, '', '2019-02-21 06:17:10', '0000-00-00 00:00:00', 'Y'),
+(19, '44', 'azadsdf', 'adfa@gfg.com', '', '', 0, '', '', '', '', 0, '', '2019-02-21 06:19:49', '0000-00-00 00:00:00', 'Y'),
+(20, '45', 'Aaad', 'azzadt@gmail.com', 'M.Sci', 'azzad', 0, '', '', '', 'avatar4.jpg', 0, '', '2019-02-21 06:21:12', '2019-03-06 02:49:25', 'Y'),
+(21, '46', 'qqqqqqqqq', 'q@sss.com', '', '', 0, '', '', '', '', 0, '', '2019-02-21 06:26:13', '0000-00-00 00:00:00', 'Y'),
+(22, '47', 'ghj', 'test@gmail.com', 'MBA', 'asdfdsfsda', 0, '', '', '', 'avatar4.jpg', 0, '', '2019-02-22 06:13:59', '2019-03-06 05:02:13', 'Y'),
+(23, '48', 'ghj', 'test@gmail.com', 'MBA', 'gadsg', 0, '', '', '', 'Snapchat-286089111.jpg', 0, '', '2019-02-22 06:15:12', '2019-03-17 06:00:28', 'Y'),
+(24, '49', 'ghj', 'test@gmail.com', '', '', 0, '', '', '', '', 0, '', '2019-02-22 06:15:17', '0000-00-00 00:00:00', 'Y'),
+(25, '50', 'ghj', 'test@gmail.com', 'MBA', 'khfgfddgjh', 0, '', '', '', 'avatar5.jpg', 2, '', '2019-02-22 06:15:25', '2010-03-19 00:05:07', 'Y'),
+(26, '51', '', '', '', '', 0, '', '', '', '', 0, '', '2019-02-23 00:27:35', '0000-00-00 00:00:00', 'Y'),
+(27, '', 'asrfga', 'adga@sgh.cssad', 'dgsgdf', '', 0, '', '', '', '', 0, '', '2010-03-19 00:06:07', '0000-00-00 00:00:00', 'Y'),
+(28, '', '$name', '$email', '$course', '', 0, '', '', '', '', 2, '', '2010-03-19 00:13:51', '0000-00-00 00:00:00', 'Y'),
+(29, '', 'sgsdffd', 'test@gmail.com', 'agfaadfgadfgfdrg', '', 0, '', '', '', '', 2, '', '2010-03-19 00:14:55', '0000-00-00 00:00:00', 'Y'),
+(30, '28', 'sgsdffd', 'test@gmail.com', 'agfaadfgadfgfdrg', '', 0, '', '', '', '', 2, '', '2010-03-19 00:22:43', '0000-00-00 00:00:00', 'Y'),
+(31, '28', 'sgsdffd', 'test@gmail.com', 'agfaadfgadfgfdrg', '', 0, '', '', '', '', 2, '', '2010-03-19 00:23:10', '0000-00-00 00:00:00', 'Y'),
+(32, 'Array', 'Ankit', 'tiwarishani01@gmail.com', 'adfga', '', 0, '', '', '', '', 2, '', '2010-03-19 02:54:26', '0000-00-00 00:00:00', 'Y'),
+(33, 'Array', 'vijay', 'ad@gfg.com', 'ADSFADSF', '', 0, '', '', '', '', 3, '', '2010-03-19 03:07:46', '0000-00-00 00:00:00', 'Y'),
+(34, 'Array', 'vijayGHFK', 'aYTHFKd@gfg.com', 'ADhgfkjSFADSF', '', 0, '', '', '', '', 3, '', '2010-03-19 03:08:42', '0000-00-00 00:00:00', 'Y'),
+(35, 'Array', '', '', '', '', 0, '', '', '', '', 3, '', '2010-03-19 09:26:31', '0000-00-00 00:00:00', 'Y'),
+(36, 'Array', 'Ankit Kanaujiya', 'tiwarishani01@gmail.com', 'agfaadfgadfgfdrg', '', 0, '', '', '', '', 3, '', '2010-03-19 09:26:49', '0000-00-00 00:00:00', 'Y'),
+(37, 'Array', 'Ankit Kanaujiya', 'test@gmail.com', 'ADhgfkjSFADSF', '', 0, '', '', '', '', 3, '', '2019-03-23 15:09:13', '0000-00-00 00:00:00', 'Y'),
+(38, 'Array', 'Ankit Kanaujiya', 'test@gmail.com', 'agfaadfgadfgfdrg', '', 0, '', '', '', '', 2, '', '2019-03-23 15:14:38', '0000-00-00 00:00:00', 'Y'),
+(39, 'Array', 'Ankit Kanaujiya', 'kanaujiya1999@gmail.com', 'agfaadfgadfgfdrg', '', 0, '', '', '', '', 3, '', '2019-03-23 15:15:10', '0000-00-00 00:00:00', 'Y'),
+(40, '28', 'Ankit Kanaujiya', 'tiwarishani01@gmail.com', 'agfaadfgadfgfdrg', '', 0, '', '', '', '', 3, '', '2019-03-29 08:34:50', '0000-00-00 00:00:00', 'Y'),
+(41, '28', 'Ankit Kanaujiya', 'tiwarishani01@gmail.com', 'agfaadfgadfgfdrg', '', 0, '', '', '', '', 3, '', '2019-03-29 08:36:40', '0000-00-00 00:00:00', 'Y'),
+(42, '28', 'vijay', 'vijay@gmail.com', 'ADhgfkjSFADSF', '', 0, '', '', '', '', 2, '', '2019-03-29 08:37:37', '0000-00-00 00:00:00', 'Y'),
+(43, '28', 'Ankit Kanaujiya', 'test@gmail.com', '', '', 0, '', '', '', '', 2, '', '2019-03-30 23:23:15', '0000-00-00 00:00:00', 'Y'),
+(44, '28', 'Ankit Kanaujiya', 'kanaujiya1999@gmail.com', '', '', 0, '', '', '', '', 2, '', '2019-03-30 23:33:49', '0000-00-00 00:00:00', 'Y'),
+(45, '28', 'Ankit Kanaujiya', 'test@gmail.com', '7', '', 0, '', '', '', '', 2, '', '2019-03-31 05:37:23', '0000-00-00 00:00:00', 'Y'),
+(46, '28', 'vijay', 'adfg@gmail.com', '14', '', 0, '', '', '', '', 3, '', '2019-03-31 05:42:21', '0000-00-00 00:00:00', 'Y');
 
 -- --------------------------------------------------------
 
@@ -315,28 +340,6 @@ INSERT INTO `m_user_college` (`college_id`, `college_name`, `created_at`, `updat
 (49, '', '2019-02-22 06:15:17', '0000-00-00 00:00:00', 'Y'),
 (50, '', '2019-02-22 06:15:25', '0000-00-00 00:00:00', 'Y'),
 (51, '', '2019-02-23 00:27:35', '0000-00-00 00:00:00', 'Y');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `m_user_detail`
---
-
-CREATE TABLE `m_user_detail` (
-  `user_detail_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `user_pic` varchar(64) NOT NULL,
-  `user_course_id` int(11) NOT NULL,
-  `user_div_id` int(11) NOT NULL,
-  `user_roll_id` int(11) NOT NULL,
-  `user_contact` varchar(12) NOT NULL,
-  `user_gender` enum('Male','Female','Other') NOT NULL,
-  `user_address` varchar(128) NOT NULL,
-  `user-dob` varchar(64) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
-  `status` enum('Y','N') NOT NULL DEFAULT 'Y'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -424,7 +427,7 @@ INSERT INTO `post` (`post_id`, `user_id`, `title`, `discription`, `image`, `crea
 (14, 1, 'anime', 'inamsgfdsgdfg', '6.jpg', '2019-03-28 06:20:55', '2019-03-28 07:20:43', 'Y'),
 (15, 1, 'afsdadsa', 'adfsa', '4.jpg', '2019-03-28 06:40:07', '2019-03-28 07:18:13', 'Y'),
 (16, 1, 'The Most Advance Business Plan', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', '2.jpg', '2019-03-28 06:43:06', '2019-03-28 07:18:16', 'Y'),
-(17, 1, 'dfgasdfh', 'adfggggggggggggggggggggggggg', '', '2019-03-28 22:39:50', '2019-03-28 23:42:05', 'Y'),
+(17, 1, 'dfgasdfh', 'adfggggggggggggggggggggggggg', '12.jpg', '2019-03-28 22:39:50', '2019-03-30 07:52:54', 'Y'),
 (18, 1, 'movie', 'dfagdafgdfgfdgfgds', '7.jpg', '2019-03-28 23:38:54', '0000-00-00 00:00:00', 'P');
 
 -- --------------------------------------------------------
@@ -527,6 +530,18 @@ CREATE TABLE `suggestion` (
   `status` enum('A','D','P') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `suggestion`
+--
+
+INSERT INTO `suggestion` (`suggestion_id`, `user_id`, `title`, `comment`, `created_at`, `updated_at`, `status`) VALUES
+(1, 1, 'collage festival', ' firework  is prohited in collage festival. ', '2019-03-29 10:55:54', '0000-00-00 00:00:00', 'A'),
+(2, 1, '', '', '2019-03-29 10:58:14', '0000-00-00 00:00:00', 'A'),
+(3, 1, 'collage festival', 'team work is important.', '2019-03-29 11:03:35', '0000-00-00 00:00:00', 'P'),
+(4, 1, 'collage festival', 'adfasdfsf', '2019-03-29 11:17:40', '0000-00-00 00:00:00', 'P'),
+(5, 2, 'collage festival', 'sgfhsfhfghfghghhjdgjjd', '2019-04-02 03:04:39', '0000-00-00 00:00:00', 'P'),
+(6, 2, 'collage festival', 'fgsfhfghfghgfhhfdfhftuyd', '2019-04-02 03:05:25', '0000-00-00 00:00:00', 'P');
+
 -- --------------------------------------------------------
 
 --
@@ -543,6 +558,14 @@ CREATE TABLE `timetable` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   `status` enum('Y','N') NOT NULL DEFAULT 'Y'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `timetable`
+--
+
+INSERT INTO `timetable` (`timetable_id`, `standard_id`, `title`, `description`, `image`, `created_at`, `updated_at`, `status`) VALUES
+(1, 1, 'afdadfasd', 'afgadgadfg', '11.jpg', '2019-03-29 14:11:53', '2019-04-02 02:39:29', 'Y'),
+(2, 1, 'afdadfasd', 'afgadgadfg', '11.jpg', '2019-03-29 14:14:25', '2019-04-02 02:39:40', 'Y');
 
 -- --------------------------------------------------------
 
@@ -570,7 +593,8 @@ INSERT INTO `user_course` (`course_id`, `course_name`, `course_discription`, `cr
 (11, 'docter', 'dfgdsagdfgdsfgdfgfdsdsffg\r\ndfsgsdfgfdsgsdfdfgdfg', '2019-02-20 15:36:47', '0000-00-00 00:00:00', 'Y'),
 (12, 'adfgdagfd', 'sfghfhhsfggfsfgtgssssssssssssssssss', '2019-02-20 15:37:55', '0000-00-00 00:00:00', 'Y'),
 (13, 'adfgdagfd', 'srthswrt', '2019-02-20 19:28:49', '0000-00-00 00:00:00', 'Y'),
-(14, 'qqqqqqqqqqqqq', 'wwwwwwwwwwwww', '2019-02-21 03:49:09', '0000-00-00 00:00:00', 'Y');
+(14, 'qqqqqqqqqqqqq', 'wwwwwwwwwwwww', '2019-02-21 03:49:09', '0000-00-00 00:00:00', 'Y'),
+(15, 'it', 'may be its stuff', '2019-03-30 23:18:36', '0000-00-00 00:00:00', 'Y');
 
 --
 -- Indexes for dumped tables
@@ -635,12 +659,6 @@ ALTER TABLE `m_user`
 --
 ALTER TABLE `m_user_college`
   ADD PRIMARY KEY (`college_id`);
-
---
--- Indexes for table `m_user_detail`
---
-ALTER TABLE `m_user_detail`
-  ADD PRIMARY KEY (`user_detail_id`);
 
 --
 -- Indexes for table `m_user_div`
@@ -722,7 +740,7 @@ ALTER TABLE `user_course`
 -- AUTO_INCREMENT for table `community`
 --
 ALTER TABLE `community`
-  MODIFY `community_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `community_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `contact_us`
 --
@@ -752,7 +770,7 @@ ALTER TABLE `friend`
 -- AUTO_INCREMENT for table `letter`
 --
 ALTER TABLE `letter`
-  MODIFY `letter_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `letter_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `message`
 --
@@ -762,17 +780,12 @@ ALTER TABLE `message`
 -- AUTO_INCREMENT for table `m_user`
 --
 ALTER TABLE `m_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 --
 -- AUTO_INCREMENT for table `m_user_college`
 --
 ALTER TABLE `m_user_college`
   MODIFY `college_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
---
--- AUTO_INCREMENT for table `m_user_detail`
---
-ALTER TABLE `m_user_detail`
-  MODIFY `user_detail_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `m_user_div`
 --
@@ -822,17 +835,17 @@ ALTER TABLE `sms`
 -- AUTO_INCREMENT for table `suggestion`
 --
 ALTER TABLE `suggestion`
-  MODIFY `suggestion_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `suggestion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `timetable`
 --
 ALTER TABLE `timetable`
-  MODIFY `timetable_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `timetable_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `user_course`
 --
 ALTER TABLE `user_course`
-  MODIFY `course_id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `course_id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
