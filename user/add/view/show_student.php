@@ -1,5 +1,4 @@
 <?php include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
-
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -46,6 +45,7 @@
                                         <th>STUDENT NAME</th>
                                         <th>EMAIL ADDRESS</th>
                                         <th>COURSE</th>
+                                        <th>MAIL</th>
                                     
 
                                     </tr>
@@ -66,7 +66,13 @@
                                         <td><?php echo $result['user_name']; ?></td>
                                         <td><?php echo $result['user_email']; ?></td>
                                         <td><?php echo $result['user_course']; ?></td>
-                                        
+                                        <td>
+                                        <?php if($result['mail'] == 'N'){ ?>
+                                            <button class='btn btn-primary btn-outline-dark' name="send"><a href="http://classlink.com/user/add/view/send_mail.php?id=<?php echo $result['user_id']; ?>" class="text-white">Send Mail</a></button>
+                                        <?php }else{ ?>
+                                            <input type="button" class='btn btn-primary btn-outline-dark' name="send" value="Sended Mail">
+                                        <?php } ?>
+                                        </td>
                                     </tr>
                                     <?php
                                   }
@@ -92,8 +98,11 @@
 <!-- Jquery Core Js --> 
 <script src="http://classlink.com/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="http://classlink.com/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script>
+<script>
 
-<script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+
+</script>
 </body>
 
 

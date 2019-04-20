@@ -47,7 +47,7 @@
                                     </thead>
                                     <?php
                                     include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
-                                      $qry="SELECT * FROM `contact_us` ";
+                                      $qry="SELECT * FROM `contact_us` Where `status` = 'P' ";
                                       $run=mysqli_query($con,$qry);
                                       while ($result = mysqli_fetch_array($run)) {
                                           ?>
