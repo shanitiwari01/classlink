@@ -12,7 +12,7 @@
 <!-- Right Icon menu Sidebar -->
 <div class="navbar-right">
     <ul class="navbar-nav" >
-        <li><a href="#search" class="main_search" style="padding: 15px !important;"  title="Search..."><i class="zmdi zmdi-search"></i></a></li>
+        <li><a href="http://classlink.com/user/controller/suggetion/suggetion.php" class="main_search" style="padding: 15px !important;"  title="Search..."><i class="zmdi zmdi-search"></i></a></li>
         <li class="dropdown">
             <a href="javascript:void(0);" class="dropdown-toggle" style="padding: 15px !important;" title="App" data-toggle="dropdown" role="button"><i class="zmdi zmdi-apps"></i></a>
             <ul class="dropdown-menu slideUp2">
