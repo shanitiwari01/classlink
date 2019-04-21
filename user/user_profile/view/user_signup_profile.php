@@ -85,7 +85,7 @@
                                 </div>
 
                                 <div class="form-group">
-                            <input type="file"  name="picture" class=" form-control dropify" value="<?php echo $result['user_image'];  ?>" >
+                            <input type="file"  name="picture" class=" form-control dropify" >
                             </div>
                                 
                                 <div class="form-group form-float">

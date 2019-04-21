@@ -53,7 +53,7 @@
                                 <?php
                             
                                 include($_SERVER['DOCUMENT_ROOT'].'/database/dbcon.php');
-                                  $qry="SELECT * FROM `m_user` WHERE `user_role_id`= 3";
+                                  $qry="SELECT * FROM `vusers` WHERE `user_role_id`= 3";
                                   $run=mysqli_query($con,$qry);
                                   while ($result = mysqli_fetch_array($run)) {
                                       
@@ -65,7 +65,7 @@
                                         <td><?php echo $result['user_id']; ?></td>
                                         <td><?php echo $result['user_name']; ?></td>
                                         <td><?php echo $result['user_email']; ?></td>
-                                        <td><?php echo $result['user_course']; ?></td>
+                                        <td><?php echo $result['course_name']; ?></td>
                                         <td>
                                         <?php if($result['mail'] == 'N'){ ?>
                                             <button class='btn btn-primary btn-outline-dark' name="send"><a href="http://classlink.com/user/add/view/send_mail.php?id=<?php echo $result['user_id']; ?>" class="text-white">Send Mail</a></button>
