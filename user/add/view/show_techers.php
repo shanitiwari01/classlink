@@ -43,6 +43,7 @@
                                         <th>TEACHER NAME</th>
                                         <th>EMAIL ADDRESS</th>
                                         <th>COURSE</th>
+                                        <th>MAIL</th>
                                     
 
                                     </tr>
@@ -63,7 +64,13 @@
                                         <td><?php echo $result['user_name']; ?></td>
                                         <td><?php echo $result['user_email']; ?></td>
                                         <td><?php echo $result['course_name']; ?></td>
-                                        
+                                        <td>
+                                        <?php if($result['mail'] == 'N'){ ?>
+                                            <button class='btn btn-primary btn-outline-dark' name="send"><a href="http://classlink.com/user/add/view/send_mail.php?id=<?php echo $result['user_id']; ?>" class="text-white">Send Mail</a></button>
+                                        <?php }else{ ?>
+                                            <input type="button" class='btn btn-primary btn-outline-dark' name="send" value="Sended Mail">
+                                        <?php } ?>
+                                        </td>
                                     </tr>
                                     <?php
                                   }

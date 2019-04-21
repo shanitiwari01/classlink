@@ -28,7 +28,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
                         <div class="col-lg-4 col-md-12">
                             <div class="card mcard_3">
                                 <div class="body">
-                                    <a href="#"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['receiver_user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
+                                    <a href="http://classlink.com/user/user_profile/view/user_info.php?id=<?php echo $data['receiver_user_id']; ?>"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['receiver_user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
                                     <h4 class="m-t-10"><?php echo $data['receiver_user_name']; ?></h4>                            
                                     <div class="row">
                                         
@@ -47,7 +47,6 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
                                        {
                                            echo "Student";
                                        }
-                                       
                                        
                                        ?>
                
@@ -71,7 +70,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
                         <div class="col-lg-4 col-md-12">
                             <div class="card mcard_3">
                                 <div class="body">
-                                    <a href="#"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['sender_user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
+                                    <a href="http://classlink.com/user/user_profile/view/user_info.php?id=<?php echo $data['sender_user_id']; ?>"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['sender_user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
                                     <h4 class="m-t-10"><?php echo $data['sender_user_name']; ?></h4>                            
                                     <div class="row">
                                         

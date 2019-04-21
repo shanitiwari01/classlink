@@ -12,7 +12,7 @@
 <!-- Favicon-->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- Custom Css -->
-<link rel="stylesheet" href="http://classlink.com/assets/bootstrap/bootstrap.min.css">S
+<link rel="stylesheet" href="http://classlink.com/assets/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="http://classlink.com/assets/css/style.min.css">
 </head>
 

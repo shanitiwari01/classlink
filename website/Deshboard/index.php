@@ -341,13 +341,8 @@
           <div class="team-block bottom">
             <img src="img/team/2.jpg" class="img-responsive" alt="img">
             <div class="team-content">
-              <ul class="list-unstyled">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-              <span>manager</span>
-              <h4>Kimberly Tran</h4>
+              <span>Project manager</span>
+              <h4>Tiwari Shani</h4>
             </div>
           </div>
         </div>
@@ -356,13 +351,8 @@
           <div class="team-block bottom">
             <img src="img/team/3.jpg" class="img-responsive" alt="img">
             <div class="team-content">
-              <ul class="list-unstyled">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-              <span>manager</span>
-              <h4>Kimberly Tran</h4>
+              <span>Software developer</span>
+              <h4>Kanaujiya Ankit </h4>
             </div>
           </div>
         </div>

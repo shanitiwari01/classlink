@@ -12,7 +12,7 @@ if (isset($_POST['send']))
     VALUES ('$name','$email','$subject','$collage','$message')";
     $result=mysqli_query($con,$q);
     if ($result) {
-    header('LOCATION:http://classlink.com/website/eStartup/index.php');
+    header('LOCATION:http://classlink.com');
     }
 
 }
