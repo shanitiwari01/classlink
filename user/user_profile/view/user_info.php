@@ -71,6 +71,13 @@
                             </div>
                             </div>
 
+                            <form action="http://classlink.com/user/user_profile/controller/send_text.php" id="form" method="POST" >
+                            <input type="hidden" name="user_id" value="<?php echo $result['user_id']; ?>" />
+                            <input type="hidden" name="contact" value="<?php echo $result['user_contact']; ?>" />
+                            <textarea name="message" class="form-control" placeholder="Type here ....."></textarea>
+                            <br/>
+                            <input type="submit" class="btn btn-success" value="Send Text" onclick="submit()"/>
+                            </form>
                             
                         </div>
                     </div>
@@ -92,5 +99,9 @@
 <script src="http://classlink.com/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
 <script src="http://classlink.com/assets/bundles/summernote.js"></script>
 </body>
-
+<script>
+function submit(){
+document.getElementById('form').submit();
+}
+</script>
 </html>

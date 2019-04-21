@@ -28,7 +28,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
                         <div class="col-lg-4 col-md-12">
                             <div class="card mcard_3">
                                 <div class="body">
-                                    <a href="http://classlink.com/user/user_profile/view/user_info.php?id=<?php echo $data['user_id']; ?>"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['sender_user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
+                                    <a href="http://classlink.com/user/user_profile/view/user_info.php?id=<?php echo $data['sender_user_id']; ?>"><img style="height: 90px;width: 90px;" src="http://classlink.com/assets/images/user_signup/<?php echo $data['sender_user_image']; ?>" class="rounded-circle shadow " alt="profile-image"></a>
                                     <h4 class="m-t-10"><?php echo $data['sender_user_name']; ?></h4>                            
                                     <div class="row">
                                         
@@ -58,9 +58,9 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
                                     <br>
                                     <div class="Right ">
                                     
-                                        <button  class="btn btn-success request-accepted"  id="user<?php echo $data['user_id'];?>" data-id="<?php echo $data['user_id'];?>">ACCEPT</button>
+                                        <input type="button" class="btn btn-success request-accepted" data-status="Y"  id="user<?php echo $data['friend_id'];?>" data-id="<?php echo $data['friend_id'];?>" value="ACCEPT">
                                        
-                                        <button  class="btn btn-danger request-rejected"  id="reject<?php echo $data['user_id'];?>" data-id="<?php echo $data['user_id'];?>">REJECT</button> 
+                                        <input type="button" class="btn btn-danger request-accepted" data-status="N"  id="reject<?php echo $data['friend_id'];?>" data-id="<?php echo $data['friend_id'];?>" value="REJECT"> 
                                     </div>
                                 </div>
                                 
@@ -92,15 +92,24 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/layout/header.php'; ?>
 <script>
 $('.request-accepted').click(function(){
     $id = $(this).data('id');
+    $status = $(this).data('status');
     $.ajax({
         type:"POST",
         url:"accept_request.php",
         dataType:'json',
         data:{
-            id:$id
+            id:$id,status:$status
+
         },
         success: function(data) {
-         $('#user'+$id).val('ACCEPTED');
+            if($status == 'Y'){
+                $('#user'+$id).val('ACCEPTED');
+                $('#reject'+$id).val('REJECT');
+            }else{
+                $('#reject'+$id).val('REJECTED');
+                $('#user'+$id).val('ACCEPT');
+            }
+        
         }
     })
 })
