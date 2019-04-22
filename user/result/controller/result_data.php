@@ -7,7 +7,7 @@ $disc=$_POST['discription'];
 $imagename=$_FILES['picture']['name'];
 $tempname=$_FILES['picture']['tmp_name'];
 move_uploaded_file($tempname,"../../../assets/images/result/$imagename");
-$qry="INSERT INTO `result`( `standard_id`, `title`, `description`, `image`, `status`) 
+$qry="INSERT INTO `result`( `standard_id`, `title`, `description`, `result_image`, `status`) 
 VALUES ('$standard_id','$title','$disc','$imagename','N') ";
  $run=mysqli_query($con,$qry);
 

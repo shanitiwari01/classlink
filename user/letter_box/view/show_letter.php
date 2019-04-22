@@ -49,13 +49,7 @@
                         <div class="blogitem mb-5">
 
                             <div class="blogitem-content">
-                                <div class="blogitem-header">
-                                    <div class="blogitem-meta">
-                                        <span><i class="zmdi zmdi-account"></i>By <a href="javascript:void(0);">Michael</a></span>
-                                        <span><i class="zmdi zmdi-comments"></i><a href="blog-details.html">Comments(3)</a></span>
-                                    </div>
-                                   
-                                </div>
+                               
                                 <h5><?php  echo $result['subject']; ?></h5>
                                 <p><?php echo $result['description']; ?></p>
                             </div>

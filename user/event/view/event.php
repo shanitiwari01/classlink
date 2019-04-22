@@ -40,7 +40,7 @@
                     <div class="card">
                         <div class="body">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter title of Events..." name="event" />
+                                <input type="text" class="form-control" placeholder="Enter title of Events..." name="title" />
                             </div>
                            
                         </div>

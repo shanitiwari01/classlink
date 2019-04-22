@@ -11,6 +11,7 @@ $qry=" INSERT INTO `post`( `user_id`, `title`, `discription`, `image`) VALUES
  ('$user_id','$blog_title','$blog_disc','$imagename') ";
  $run=mysqli_query($con,$qry);
 
+
 header('LOCATION:http://classlink.com/user/blog_post/view/post_aprove.php');
 
 

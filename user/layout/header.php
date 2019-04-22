@@ -84,6 +84,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/user/controller/authentication/check_in.php'
             
             <a href="http://classlink.com/user/add/view/show_techers.php"><i class=""></i><i class="zmdi zmdi-account"></i><span>Teacher</span></a>
             <a href="http://classlink.com/user/blog_post/view/post_list_view.php"><i class="zmdi zmdi-blogger"></i><span>Blogger</span></a>
+            <a href="http://classlink.com/user/blog_post/view/post_aprove.php"><i class="zmdi zmdi-blogger"></i><span>Blogger Approved</span></a>
 
 <?php
            }
