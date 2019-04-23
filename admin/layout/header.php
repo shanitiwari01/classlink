@@ -27,7 +27,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/admin/libraries/check_in.php';
 <aside id="leftsidebar" class="sidebar">
     <div class="navbar-brand">
         <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
-        <a href="#"><img src="http://classlink.com/assets/images/logo.png" width="85" alt="ClassLINK"><span class="m-l-10">ClassLINK</span></a>
+        <a href="#"><img src="http://classlink.com/assets/images/logo.png" width="85" alt="ClassLINK"><span class="m-l-10"></span></a>
     </div>
     <div class="menu">
         <ul class="list">

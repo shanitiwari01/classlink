@@ -280,7 +280,7 @@
     <div class="container">
       <div class="section-title text-center">
         <h2>App Gallery</h2>
-        <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+        <p class="separator">all screenshots in only demo data</p>
       </div>
     </div>
 
