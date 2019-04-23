@@ -49,7 +49,7 @@
 
                         <div class="blogitem mb-5">
                             <div class="blogitem-image">
-                                <a href=""><img src="http://classlink.com/assets/images/announcement/<?php echo $result['image']; ?>" alt="blog image"></a>
+                                <a href=""><img src="http://classlink.com/assets/images/announcement/<?php echo $result['image']; ?>" alt="blog image" width="1010" height="650"></a>
                                 <span class="blogitem-date"><?php echo date_format($date, 'g:ia \o\n l jS F Y');  ?></span>
                             </div>
                             <div class="blogitem-content">

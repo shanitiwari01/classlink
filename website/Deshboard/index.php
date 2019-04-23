@@ -349,7 +349,7 @@
 
         <div class="col-md-6 col-md-4 col-lg-3 mr-auto">
           <div class="team-block bottom">
-            <img src="img/team/3.jpg" class="img-responsive" alt="img">
+            <img src="http://classlink.com/assets/images/team/1.jpg" class="img-responsive" alt="img">
             <div class="team-content">
               <span>Software developer</span>
               <h4>Kanaujiya Ankit </h4>
@@ -358,7 +358,6 @@
         </div>
 
         
-
       </div>
     </div>
   </section>

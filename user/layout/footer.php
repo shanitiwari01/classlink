@@ -202,7 +202,7 @@ if($run['user_role_id']==1){
                         </li>
                         <?php
                     }
-elseif($run['user_role_id']==2||$run['usr_role_id']==3){
+elseif($run['user_role_id']==2||$run['user_role_id']==3){
 ?>
                  <li>
                             <a href="http://classlink.com/user/suggestion/view/suggestion.php">
